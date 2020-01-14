@@ -23,6 +23,22 @@ $routes = array(
   'shop' => array(
     'controller' => 'Products',
     'action' => 'shop'
+  ),
+  'abonnement' => array(
+    'controller' => 'Products',
+    'action' => 'abonnement'
+  ),
+  'product' => array(
+    'controller' => 'Products',
+    'action' => 'product'
+  ),
+  'mandje' => array(
+    'controller' => 'Products',
+    'action' => 'mandje'
+  ),
+  'form' => array(
+    'controller' => 'Products',
+    'action' => 'form'
   )
 );
 

@@ -21,5 +21,20 @@ class ProductsController extends Controller {
   public function shop() {
 
   }
+  public function abonnement() {
+
+  }
+
+  public function product() {
+
+  }
+  
+  public function mandje() {
+
+  }
+  public function form() {
+
+  }
+
 
 }

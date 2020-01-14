@@ -3,7 +3,7 @@
 <p class="books__info"></p>
 <?php foreach($books as $book):?>
 <article class="books__book">
-<img src="books__book--img" alt="foto boek">
+<img class="books__book--img" src="../assets/boek/<?php echo $book['name'] ?>.png" alt="foto boek" >
 <div class="wrapper">
 <p class="books__book--autor"> <?php echo $book['author'] ?></p>
   <h3 class="books__book--title"><?php echo $book['name'] ?></h3>

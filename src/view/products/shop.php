@@ -37,7 +37,7 @@
   <article class="section__reeks--item product">
   <img class="product__img" src="../assets/abonnement.png" alt="boek">
     <p class="product__quote">Wekelijks Thuis</p>
-    <h3 class="product__title">Humo abonnement</h3>
+    <h3 class="product__title">Humo abonnement</h3> <span>*digitale of papieren versie mogelijk</span>
     <div class="product__link"><img src="../assets/pijltje.svg" alt="pijltje"><a href="index.php?page=abonnement">Bekijk</a></div>
    </article>
    <article class="section__reeks--item product">
@@ -53,7 +53,7 @@
   <img class="product__img" src="../assets/leeslichtje.png" alt="boek">
     <p class="product__quote">verlichting</p>
     <h3 class="product__title">Leeslichtje</h3>
-    <div class="product__link"><img src="../assets/pijltje.svg" alt="pijltje" width="310" height="249"><a href="index.php?page=product&id=21">Bekijk</a></div>
+    <div class="product__link"><img src="../assets/pijltje.svg" alt="pijltje" ><a href="index.php?page=product&id=21">Bekijk</a></div>
    </article>
    <article class="section__reeks--item product">
    <img class="product__img" src="../assets/loep.png" alt="boek">

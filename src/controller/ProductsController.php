@@ -18,8 +18,8 @@ class ProductsController extends Controller {
   public function book() {
 
   }
+  public function shop() {
 
-
-
+  }
 
 }

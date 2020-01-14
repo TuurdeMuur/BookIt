@@ -15,7 +15,7 @@
   <li class="item">abonnement nemen</li>
   </ul>
   <ul class="header__above--section items">
-  <li class="item">shop</li>
+  <li class="item"><a href="index.php?page=shop">shop</a></li>
   <li class="item">nu in humo</li>
   <li class="item">login</li>
   <li class="item">registreer</li>
@@ -30,7 +30,7 @@
   <li class="header__under--item">tv/film</li>
   <li class="header__under--item">muziek</li>
   <li class="header__under--item">boeken</li>
-  <li class="header__under--item mandje"><a href="index.php"></a> winkelmandje</li>
+  <li class="header__under--item mandje"><a href="index.php"></a></li>
   </ul>
   </header>
   <body>

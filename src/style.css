@@ -1,4 +1,6 @@
+@import './css/reset.css';
+
 body {
-  background-color: lightsalmon;
+  background-color: white;
   font-family: sans-serif;
 }

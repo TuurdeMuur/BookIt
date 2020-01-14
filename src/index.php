@@ -15,6 +15,10 @@ $routes = array(
   'home' => array(
     'controller' => 'Products',
     'action' => 'index'
+  ),
+  'book' => array(
+    'controller' => 'Products',
+    'action' => 'book'
   )
 );
 

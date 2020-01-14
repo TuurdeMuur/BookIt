@@ -35,8 +35,16 @@
   </header>
   <body>
     <main>
+      <div>
+        <a href=""> <img src="" alt="pijltje"> ABONNEER JE OP HUMO</a>
+        <p>Humo eert het science-fiction en zet tien weken lang de beste boeken van het genre in de kijker. Deze week staat het boek Ready Player One in de kijker. Ben je in de markt om 1 van de boeken of zelf de hele reeks te kopen aarzel dan niet en bestel ze in onze webshop. </p>
+      </div>
       <?php echo $content;?>
     </main>
     <?php echo $js; ?>
   </body>
+  <footer>
+    <p>Om meer te weten te komen over het boek die deze week zijn de kijker staat</p>
+    <a href="">Klik hier</a>
+  </footer>
 </html>

@@ -16,6 +16,8 @@ class ProductsController extends Controller {
   }
 
   public function book() {
+      $books = $this->productsDAO->selectAllBooks();
+      $this->set('books', $books);
 
   }
   public function shop() {
@@ -26,9 +28,10 @@ class ProductsController extends Controller {
   }
 
   public function product() {
-
+    $product = $this->productsDAO->selectById($_GET['id']);
+    $this->set('product', $product);
   }
-  
+
   public function mandje() {
 
   }

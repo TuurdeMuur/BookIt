@@ -1,0 +1,16 @@
+:root {
+  --humoRedColor: #ee080c;
+  --humoBlackColor: black;
+  --humoGreyColor: #f8f8f4;
+  --fontSizeTiny: 1.2rem;
+  --fontSizeSmall: 2rem;
+  --fontSizeMedium: 3rem;
+  --fontSizeBig: 4rem;
+  --fontWeightLight: 300;
+  --fontWeightNormal: 500;
+  --fontWeightBold: 600;
+  --marginTiny: 1rem;
+  --marginSmall: 2rem;
+  --marginBig: 5rem;
+  --paddingTiny: .5rem;
+}

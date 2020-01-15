@@ -299,3 +299,65 @@ a {
   flex-direction: column;
   justify-content: space-between;
 }
+
+.books__explain {
+  color: var(--humoRedColor);
+  font-size: var(--fontSizeSmall);
+  font-weight: var(--fontWeightBold);
+  margin-bottom: var(--marginBig);
+}
+
+.book-wrapper {
+  display: grid;
+  grid-gap: 2vw;
+  grid-template-columns: 35vw 35vw;
+
+  & .books__book--img {
+    margin-right: 2rem;
+  }
+
+  & .books__book {
+    display: flex;
+    justify-content: space-between;
+    background-image: url('./assets/SVG/dottet.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: var(--paddingMedium);
+
+    & .book {
+      margin-top: 2rem;
+    }
+
+    & .books__book--autor {
+      font-size: var(--fontSizeTiny);
+      font-weight: var(--fontWeightBold);
+      color: grey;
+    }
+
+    & .books__book--title {
+      font-size: var(--fontSizeSmall);
+      font-weight: var(--fontWeightBold);
+      color: black;
+    }
+
+    & .books__book--text {
+      font-size: var(--fontSizeTiny);
+      font-weight: var(--fontWeightLight);
+      color: black;
+      margin-bottom: var(--marginSmall);
+    }
+
+    & .books__book--order {
+      font-weight: var(--fontWeightLight);
+      display: flex;
+      align-items: center;
+      color: red;
+      font-size: var(--fontSizeSmall);
+
+      & .pijltje {
+        margin-right: var(--marginTiny);
+      }
+    }
+
+  }
+}

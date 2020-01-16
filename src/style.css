@@ -252,6 +252,7 @@ a {
 .humo-wrapper {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 8rem;
 }
 
 .section__humo--item {
@@ -259,8 +260,9 @@ a {
   flex-direction: column;
   justify-content: space-between;
   padding-bottom: 1rem;
-  height: 24vw;
+  height: 17vw;
 }
+
 
 .title-wrapper {
   display: flex;
@@ -269,7 +271,6 @@ a {
 .gadget-wrapper {
   display: flex;
   justify-content: space-between;
-
 }
 
 .black {
@@ -285,6 +286,9 @@ a {
   background-color: var(--humoRedColor);
   margin-bottom: var(--marginSmall);
   text-transform: uppercase;
+  width: 7vw;
+  padding: .4rem 0 .4rem .4rem;
+  margin-left: 1rem;
 }
 
 .title-black {
@@ -363,3 +367,127 @@ a {
 
   }
 }
+
+.cart-items {
+  color: white;
+  background-color: var(--humoRedColor);
+  font-size: var(--fontSizeTiny);
+  padding: .1rem .5rem .1rem .5rem;
+}
+
+.sub-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  & .sub__item {
+
+    & .sub__item--quote {
+      font-weight: var(--fontWeightBold);
+      color: var(--humoRedColor);
+      font-size: var(--fontSizeTiny);
+      margin-top: 2rem;
+    }
+
+    & .books__book--title {
+      font-weight: var(--fontWeightBold);
+      font-size: var(--fontSizeMedium);
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    & .books__book--order {
+      font-weight: var(--fontWeightLight);
+      font-size: var(--fontSizeMedium);
+      color: var(--humoRedColor);
+
+      & .pijltje-sub {
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+
+.article {
+  width: 74vw;
+}
+
+.article__wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 2fr;
+  color: white;
+
+  & .article__text {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    padding: var(--paddingBig);
+    font-size: var(--fontSizeTiny);
+
+    & .article__text--description {
+      font-size: var(--fontSizeSmall);
+      margin: 2rem 0 2rem 0;
+    }
+
+    & .product__wrapper--text-button {
+      background-color: var(--humoRedColor);
+      border: none;
+      color: white;
+      text-transform: uppercase;
+      margin-top: 2rem;
+    }
+  }
+}
+
+.article__links--link {
+  color: var(--humoRedColor);
+  display: flex;
+  align-items: center;
+  font-size: var(--fontSizeSmall);
+  font-weight: var(--fontWeightlight);
+  margin-top: 4rem;
+}
+
+.cart__product{
+  width: 74vw;
+  display: grid;
+  grid-template-columns: 8fr 4fr .5fr;
+  grid-gap: 2rem;
+  background-image: url('./assets/SVG/dottet.svg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  font-size: var(--fontSizeSmall);
+  padding-bottom: 2rem;
+  padding-top: 3rem;
+  font-weight: 900;
+
+  & .cart__product--remove {
+    order: 3;
+  }
+
+  & .cart__product--specifics {
+    display: flex;
+    justify-content: space-between;
+    color: var(--humoRedColor);
+    font-weight: 300;
+  }
+
+  & .cart__product--remove {
+    color: white;
+    font-size: var(--fontSizeSmall);
+    background-color: var(--humoRedColor);
+    border: none;
+  }
+}
+
+.mandje-terug {
+  display: flex;
+  align-items: center;
+  color: var(--humoRedColor);
+  font-size: var(--fontSizeSmall);
+  font-weight: 300;
+  margin-top: 3rem;
+ }

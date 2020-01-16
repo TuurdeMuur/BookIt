@@ -31,8 +31,7 @@
   <li class="header__under--item">tv/film</li>
   <li class="header__under--item">muziek</li>
   <li class="header__under--item">boeken</li>
-  <li class="header__under--item mandje"><a href="index.php?page=mandje"><img src="./assets/SVG/mandje.svg" width="20" alt="mandje"></a></li>
-  </div>
+  <li class="header__under--item mandje"><a href="index.php?page=mandje"><img src="./assets/SVG/mandje.svg" width="25" alt="mandje"><span class="cart-items"><?php echo $numItems;?></span></div></a></li>
   </ul>
   </header>
   <body>

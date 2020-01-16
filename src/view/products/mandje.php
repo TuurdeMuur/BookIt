@@ -3,7 +3,7 @@
   <h2 class="section__title" >Winkelmandje</h2>
   </div>
 <?php if (!empty($_SESSION['cart'])){ ?>
-  <form action="index.php?page=mandje" method="POST" id="cartform">
+  <form action="index.php?page=mandje" method="POST" id="cartform" class="form">
                 <?php
                     $total = 0;
                      foreach($_SESSION['cart'] as $item) {
@@ -15,7 +15,7 @@
                      <input type="hidden" name="product" value="<?php echo $item['product']['name'];?>">
                 <article class="cart__product">
                     <h3 class="cart__product--title"><?php echo $item['product']['name'];?></h3>
-                    <button type="submit" class="cart__product--remove" name="remove" value="<?php echo $item['product']['id'];?>">verwijder</button>
+                    <button type="submit" class="cart__product--remove" name="remove" value="<?php echo $item['product']['id'];?>">x</button>
                     <div class="cart__product--specifics">
                         <p class="cart__product--specific cart-prijs"  ><span class="item_price"><?php echo money_format("%i", $item['product']['price']);?> EUR</span></p>
                         <input type="text" name="quantity[<?php echo $item['product']['id'];?>]" value="<?php echo $item['quantity'];?>" class="cart__product--specific hoeveelheid">
@@ -30,5 +30,5 @@
                     <?php }else{ ?>
                       <p>er zit voorlopig niks in je mandje</p>
                       <?php };?>
-  <a href="index.php?page=shop"> <img src="" alt=""> Terug naar shop</a>
+  <a  class="mandje-terug" href="index.php?page=shop"> <img src="../assets/pijltje.svg" alt="pijltje" width="20"> Terug naar shop</a>
 </section>

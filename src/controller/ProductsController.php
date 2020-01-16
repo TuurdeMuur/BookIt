@@ -37,7 +37,7 @@ class ProductsController extends Controller {
       if ($_POST['action'] == 'add') {
         $this->_handleAdd();
         // TODO !!!
-        header('Location: index.php?page=product&id=' . $_POST['product_id']);
+        header('Location: ' . $_SERVER['REQUEST_URI']);
         exit();
       }
       if ($_POST['action'] == 'empty') {

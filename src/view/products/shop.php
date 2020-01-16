@@ -42,7 +42,7 @@
   <h2 class="section__title" >HUMO Gerelateerd</h2>
   </div>
   <div class="humo-wrapper">
-  <article class="section__humo--item product">
+  <article class="section__humo--item product product__abo">
   <img class="product__img" src="../assets/abonnementen.png" alt="boek">
     <p class="product__quote">Wekelijks Thuis</p>
     <div class="title-wrapper">
@@ -50,8 +50,9 @@
     </div>
     <div class="product__link"><img class="product__link--img" src="../assets/pijltje.svg" alt="pijltje"><a class="product__link--a" href="index.php?page=abonnement">Bekijk</a></div>
    </article>
+   <img src="../assets/SVG/dottet_recht.svg" alt="lijntje">
    <article class="section__humo--item product">
-   <img class="product__img" src="../assets/agendas.png" alt="boek">
+   <img class="product__img" src="../assets/humo agenda 2020.png" alt="boek">
     <p class="product__quote">Organiseer jezelf</p>
     <h3 class="product__title">Humo agenda 2020</h3>
     <div class="product__link"><img class="product__link--img" src="../assets/pijltje.svg" alt="pijltje"><a class="product__link--a" href="index.php?page=product&id=18">Bekijk</a></div>
@@ -72,7 +73,7 @@
     </div>
    </article>
    <article class="section__gadget--item product">
-   <img class="product__img" src="../assets/loepglas.png" alt="boek">
+   <img class="product__img" src="../assets/groot vergrootglas,loep.png" alt="boek">
     <p class="product__quote">onder de loep</p>
     <h3 class="product__title">Loep</h3>
     <div class="product__link"><img class="product__link--img" src="../assets/pijltje.svg" alt="pijltje"><a class="product__link--a" href="index.php?page=product&id=19">Bekijk</a></div>
@@ -86,7 +87,7 @@
     </div>
    </article>
    <article class="section__gadget--item product">
-   <img class="product__img" src="../assets/vergrootglass.png" alt="boek">
+   <img class="product__img" src="../assets/professioneel vergrootglas.png" alt="boek">
     <p class="product__quote">onder de loep</p>
     <h3 class="product__title">Professioneel <br> vergrootglas</h3>
     <div class="product__link"><img class="product__link--img" src="../assets/pijltje.svg" alt="pijltje"><a class="product__link--a" href="index.php?page=product&id=20">Bekijk</a></div>

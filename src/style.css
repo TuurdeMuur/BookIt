@@ -112,6 +112,8 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 17rem;
+    color: black;
   }
 
   & .call__text{

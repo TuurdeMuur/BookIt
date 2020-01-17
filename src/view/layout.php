@@ -2,8 +2,6 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Todos - <?php echo $title; ?></title>
-    <?php /* NEW */ ?>
     <?php echo $css;?>
   </head>
   <header class="header">

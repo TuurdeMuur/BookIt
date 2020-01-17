@@ -23,8 +23,10 @@ class Controller {
       $this->set('css', '<link href="style.css" rel="stylesheet">'); // regular css tag
     }
     $numItems = 0;
+    if (!empty($_SESSION['cart'])) {
     foreach ($_SESSION['cart'] as $productId => $info) {
       $numItems += $info['quantity'];
+    }
     }
     $this->set('numItems', $numItems);
     $this->createViewVarWithContent();

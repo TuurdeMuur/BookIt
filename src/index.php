@@ -39,6 +39,10 @@ $routes = array(
   'form' => array(
     'controller' => 'Products',
     'action' => 'form'
+  ),
+  'form' => array(
+    'controller' => 'Products',
+    'action' => 'form'
   )
 );
 

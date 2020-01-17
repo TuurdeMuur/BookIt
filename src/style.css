@@ -471,8 +471,18 @@ a {
   & .cart__product--specifics {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     color: var(--humoRedColor);
     font-weight: 300;
+
+    & .hoeveelheid {
+      width: 4rem;
+      color: var(--humoRedColor);
+      font-weight: 300;
+      font-size: var(--fontSizeSmall);
+      display: flex;
+      justify-content: center;
+    }
   }
 
   & .cart__product--remove {
@@ -480,14 +490,110 @@ a {
     font-size: var(--fontSizeSmall);
     background-color: var(--humoRedColor);
     border: none;
+    width: 4rem;
+    height: 4rem;
   }
 }
 
-.mandje-terug {
+.cart__totaal{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mandje__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+
+  & .mandje-terug {
+    display: flex;
+    align-items: center;
+    color: var(--humoRedColor);
+    font-size: var(--fontSizeSmall);
+    font-weight: 300;
+    margin-top: 1rem;
+   }
+
+  & .mandje__links--form {
+    color: black;
+    background-color: #ffeb00;
+    display: inline;
+    padding: var(--paddingSmall);
+    text-transform: uppercase;
+    font-weight: var(--fontWeightBold);
+  }
+
+}
+
+.cart__totaal {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: var(--humoRedColor);
+  font-size: var(--fontSizeSmall);
+  margin-top: var(--marginSmall);
+
+  & .cart__totaal--update{
+    margin-top: 2rem;
+    background-color: var(--humoRedColor);
+    color: white;
+    border: none;
+    padding: .5rem;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: var(--marginSmall);
+
+  & .description {
+    font-weight: var(--fontWeightlight);
+    margin-bottom: .5rem;
+    font-size: var(--fontSizeSmall);
+  }
+
+  & .input {
+    font-size: var(--fontSizeSmall);
+    width: 40rem;
+  }
+
+  & .form__steet--postcode {
+    width: 7rem;
+  }
+
+  & .form__steet--straat {
+    width: 50rem;
+  }
+}
+
+.intersection {
+  margin-top: 4rem;
+  color: var(--humoRedColor);
+  font-size: var(--fontSizeSmall);
+}
+
+.order__name {
+  font-weight: var(--fontWeightBold);
+  font-size: var(--fontSizeSmall);
+}
+
+.order__hoeveelheid {
   display: flex;
   align-items: center;
   color: var(--humoRedColor);
-  font-size: var(--fontSizeSmall);
-  font-weight: 300;
-  margin-top: 3rem;
- }
+  font-size: var(--fontSizeTiny);
+  margin-bottom: var(--marginTiny);
+  font-weight: 700;
+
+  & .order {
+    border: none;
+    color: var(--humoRedColor);
+    font-size: var(--fontSizeSTiny);
+    margin-left: .5rem;
+    font-weight: 700;
+  }
+}

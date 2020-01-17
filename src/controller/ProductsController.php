@@ -56,13 +56,36 @@ class ProductsController extends Controller {
     }
     if(!empty($_POST['action'])){
       if($_POST['action'] == 'checkout'){
-        $insertedOrder = $this->shopDAO->insertOrder($_POST);
+        $insertedOrder = $this->productsDAO->insertOrder($_POST);
       }
     }
 
   }
   public function form() {
 
+    if (!empty($_POST['checkout'])) {
+      $this->_handleDelete();
+      header('Location: index.php?page=form');
+      exit();
+    }
+
+    $this->set('title', 'Checkout');
+    $this->set('currentPage', 'checkout');
+
+    if(!empty($_POST['action'])){
+      if($_POST['action'] == 'insertOrder'){
+        $insertedOrder = $this->productsDAO->insertOrder($_POST);
+        if(!$insertedOrder){
+          $errors = $this->productsDAO->validate($_POST);
+          $this->set('errors',$errors);
+        }else{
+          foreach ($_SESSION['cart'] as $data){
+            $insertedId = $data['order_id'];
+            $this->shopDAO->insertOrderdProduct($data);
+          }
+        }
+      }
+    }
   }
 
   private function _handleCheckout() {
@@ -91,6 +114,10 @@ class ProductsController extends Controller {
     }
   }
 
+  private function _handleDelete() {
+    session_unset();
+  }
+
   private function _handleUpdate() {
     foreach ($_POST['quantity'] as $productId => $quantity) {
       if (!empty($_SESSION['cart'][$productId])) {
@@ -106,29 +133,5 @@ class ProductsController extends Controller {
         unset($_SESSION['cart'][$productId]);
       }
     }
-  }
-    public function checkout(){
-    $this->set('title', 'Checkout');
-    $this->set('currentPage', 'checkout');
-
-    $insert = $this->shopDAO->selectId();
-    $this->set('insert', $insert);
-
-
-    if(!empty($_POST['action'])){
-      if($_POST['action'] == 'insertOrder'){
-        $insertedOrder = $this->shopDAO->insertOrder($_POST);
-        if(!$insertedOrder){
-          $errors = $this->shopDAO->validate($_POST);
-          $this->set('errors',$errors);
-        }else{
-          foreach ($_SESSION['cart'] as $data){
-            $insertedId = $data['order_id'];
-            $this->shopDAO->insertOrderdProduct($data);
-          }
-        }
-      }
-    }
-
   }
 }

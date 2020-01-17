@@ -1,0 +1,23 @@
+
+.longread {
+  background-color: black;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+   & .longread__title {
+    display: none;
+  }
+
+  & .longread__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & .longread__gif {
+      z-index: 1;
+    }
+
+  }
+}

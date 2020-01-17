@@ -1,5 +1,6 @@
 @import './css/reset.css';
 @import './css/vars.css';
+@import './css/long.css';
 
 html {
   box-sizing: border-box;
@@ -596,4 +597,33 @@ a {
     margin-left: .5rem;
     font-weight: 700;
   }
+}
+
+.form__submit {
+  background-color: var(--humoRedColor);
+  color: white;
+  border: none;
+  margin-top: 3rem;
+  text-transform: capitalize;
+  font-size: var(--fontSizeSmall);
+}
+
+.form__betaling--img {
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.form__betaling--button {
+  border-radius: 1rem;
+  display: none;
+}
+
+.form__betaling--button:checked + img {
+  box-shadow: 0 0 0 .3rem var(--humoRedColor);
+}
+
+.form__betaling {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <?php echo $css;?>
+    <style>
+      #anim{max-width: 1000px;margin: 0 auto}
+    </style>
   </head>
   <header class="header">
   <div class="header__above">
@@ -47,5 +50,6 @@
     <a class="footer__link" href="">Klik hier</a>
   </footer>
     <?php echo $js; ?>
+    <script src="lottie.js"></script>
   </body>
 </html>

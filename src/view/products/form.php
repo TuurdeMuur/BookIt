@@ -77,17 +77,17 @@
                             <label for="visa" class="betaling-wrapper">
                                 <input class="form__betaling--button input" id="visa" required type="radio"  name="wijze"
                                     value="visa" >
-                                <img class="form__betaling--img" src="assets/visa.svg" alt="visa logo" width="100">
+                                <img class="form__betaling--img" src="../assets/visa.svg" alt="visa logo" width="100">
                             </label>
                             <label for="paypal" class="betaling-wrapper">
                                 <input class="form__betaling--button input" id="paypal" required type="radio" name="wijze"
                                     value="paypal">
-                                <img class="form__betaling--img" src="assets/paypal.svg" alt="paypal logo" width="100">
+                                <img class="form__betaling--img" src="../assets/paypal.svg" alt="paypal logo" width="100">
                             </label>
                             <label for="mistercash" class="betaling-wrapper">
                                 <input class="form__betaling--button input" id="mistercash" required type="radio" name="wijze"
                                     value="mister cash">
-                                <img class="form__betaling--img" src="assets/mistercash.svg" alt="mister cash logo" width="100">
+                                <img class="form__betaling--img" src="../assets/mistercash.svg" alt="mister cash logo" width="100">
                             </label>
                         </div>
                     </div>

@@ -27,6 +27,11 @@ class ProductsController extends Controller {
 
   }
 
+  public function long() {
+
+  }
+
+
   public function product() {
     $product = $this->productsDAO->selectById($_GET['id']);
     $this->set('product', $product);

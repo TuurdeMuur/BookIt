@@ -6,7 +6,11 @@
     <style>
       #anim{max-width: 1000px;margin: 0 auto}
     </style>
+    <link rel="stylesheet" href="https://use.typekit.net/cfm1xzq.css">
   </head>
+  <?php $currentpage = $_SERVER['REQUEST_URI'] ?>
+  <?php $badpage = "/index.php?page=long" ?>
+  <?php if ($currentpage != $badpage): ?>
   <header class="header">
   <div class="header__above">
   <ul class="header__above--section items">
@@ -34,21 +38,32 @@
   <li class="header__under--item">boeken</li>
   <li class="header__under--item mandje"><a href="index.php?page=mandje"><img src="./assets/SVG/mandje.svg" width="25" alt="mandje"><span class="cart-items"><?php echo $numItems;?></span></div></a></li>
   </ul>
-  </header>
+  <?php endif; ?>
   <body>
+
     <main>
+      <?php if ($currentpage != $badpage):?>
+    <div class="call-wrapper">
       <div class="call">
         <a class="call__link" href="index.php?page=abonnement"> <img src="./assets/pijltje.svg" alt="pijltje" width="20"> ABONNEER JE OP HUMO</a>
         <p class="call__text">Humo eert het science-fiction en zet tien weken lang de beste boeken van het genre in de kijker.
         Deze week staat het boek Ready Player One in de kijker.
-        Ben je in de markt om 1 van de boeken of zelf de hele reeks te kopen aarzel dan niet en bestel ze in onze webshop. <br> <a class="span" href="">Klik hier</a> om meer te weten te komen over het boek.</p>
-      </div>
+        Ben je in de markt om 1 van de boeken of zelf de hele reeks te kopen aarzel dan niet en bestel ze in onze webshop. <br> <a class="span" href="index.php?page=long">Klik hier</a> om meer te weten te komen over het boek.</p>
+      </div></div>
+      <?php else: ?>
+        <div class="terug">
+    <a class="terug__link" href="index.php">Terug naar humo site</a>
+    </div>
+    </header>
+      <?php endif;?>
       <?php echo $content;?>
     </main>
+    <?php if ($currentpage != $badpage): ?>
     <footer class="footer">
     <p class="footer__text">Om meer te weten te komen over het boek die deze week zijn de kijker staat</p>
     <a class="footer__link" href="">Klik hier</a>
   </footer>
+  <?php endif; ?>
     <?php echo $js; ?>
     <script src="lottie.js"></script>
   </body>

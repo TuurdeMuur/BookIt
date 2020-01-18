@@ -57,7 +57,5 @@ require('./style.css');
     }
   };
 
-
-
   init();
 }

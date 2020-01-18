@@ -98,6 +98,11 @@ a {
 
 }
 
+.call-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .call {
   margin-top: var(--marginSmall);
   text-align: center;

@@ -1,4 +1,3 @@
-
 .longread {
   background-color: black;
   width: 100vw;
@@ -12,6 +11,11 @@
   font-size: var(--fontSizeSmall);
   line-height: 1.4;
 
+  & .longread__gif {
+    width: 70vw;
+    margin-bottom: 5vw;
+  }
+
   & .longread__missie {
     color: var(--longBlueColor);
     font-family: hydrophilia-iced, sans-serif;
@@ -23,6 +27,7 @@
   & .longread__intro {
     width: 50vw;
     text-align: center;
+    margin-top: 2rem;
   }
 
   & .level {
@@ -36,6 +41,7 @@
     margin-top: 3rem;
 
     & .level__left {
+      width: 75vw;
       grid-column: 1/3;
     }
 
@@ -43,6 +49,10 @@
       grid-column: 2/4;
       display: flex;
       justify-content: flex-end;
+
+      & .level__right--img {
+        width: 75vw;
+      }
     }
 
     & .level__text--left {
@@ -80,22 +90,6 @@
     margin-bottom: 2rem;
     padding-top: var(--paddingMedium);
     padding-bottom: 6rem;
-
-    & .level__2-container {
-      border: solid .5rem var(--longPinkColor);
-      border-radius: 2rem;
-      padding: 3rem 8rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 3rem;
-    }
-
-    & .level__2--wrapper {
-      width: 30vw;
-      text-align: center;
-
-    }
   }
 
   & .level__3 {
@@ -119,7 +113,7 @@
       background-size: 20vw;
       display: flex;
       align-items: center;
-      width: 40vw;
+      width: 50vw;
       height: 10vw;
 
       & .level__title--3 {
@@ -133,7 +127,7 @@
       background-image: url("../assets/SVG/death.svg");
       background-repeat: no-repeat;
       background-position: right;
-      padding-right: 20rem;
+      padding-right: 15vw;
       background-size: 10vw;
       text-align: left;
     }
@@ -143,7 +137,7 @@
       border: solid black .5rem;
       border-radius: 2rem;
       width: 55vw;
-      padding: 3rem;
+      padding: 2rem;
       display: grid;
       grid-template-columns: 40vw 1fr;
 
@@ -155,28 +149,10 @@
         grid-column: 2;
         display: flex;
         justify-content: center;
+        margin-top: 2rem;
+        font-size: 1.7rem;
       }
 
-      & .level__3--films {
-        margin-top: 3rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1.3fr 1fr;
-        grid-template-rows: 3vw;
-        grid-gap: 3rem;
-        grid-column: 1/3;
-
-        & .level__3--film {
-          display: flex;
-          justify-content: left;
-          align-items: flex-end;
-          background-image: url("../assets/SVG/film.svg");
-          background-repeat: no-repeat;
-          background-position: left;
-          padding-left: 4vw;
-          background-size: 3vw;
-
-        }
-      }
     }
   }
 
@@ -185,6 +161,7 @@
     width: 100vw;
     margin-top: 2rem;
     padding-top: 4rem;
+    padding-bottom: 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -218,7 +195,7 @@
       text-align: center;
 
       & .two {
-       margin-bottom: 5rem;
+        margin-bottom: 5rem;
       }
     }
   }
@@ -305,4 +282,49 @@
     font-size: var(--fontSizeSmall);
 
   }
+}
+
+.joystick-gif {
+  width: 55vw;
+}
+
+.level__3--films {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 3vw 3vw 3vw;
+  grid-gap: 2rem;
+  grid-column: 1/3;
+  margin-bottom: 3rem;
+}
+
+.level__3--film {
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+  background-image: url("../assets/SVG/film.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 4vw;
+  background-size: 3vw;
+}
+
+.pacman__mannetjes {
+  width: 45vw;
+}
+
+.level__2-container {
+  border: solid .5rem var(--longPinkColor);
+  border-radius: 2rem;
+  padding: 3rem 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.level__2--wrapper {
+  width: 30vw;
+  text-align: center;
+
 }

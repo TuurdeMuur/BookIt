@@ -18,28 +18,25 @@
     <div class="text__wrapper">
     <p class="level__text level__text--right">Het boek zelf zit vol met verwijzingen naar Clines jeugd tijdens de jaren 80 in de states. De verwijzingen naar videogames en science-fiction films zij. Niet ver te zoeken aangezien deze in de jaren 80 als mainstream media werden gezien</p>
     </div>
-    <img class="level__left" src="../assets/SVG/left_2.svg" alt="" width="1000">
+    <img class="level__left left-2" src="../assets/SVG/left_2.svg" alt="trap" >
   </article>
   <article class="level level__2">
     <img class="pacman" src="../assets/gifs/pacman_1.gif" alt="packman" width="200">
     <div class="level__2-container">
     <div class ="pacman-wrapper">
-    <img src="../assets/SVG/bolletjes.svg" alt="bolletjes">
+    <img src="../assets/SVG/bolletjes.svg" alt="bolletjes" class="bolletjes">
     <h2 class="level__title">Level 2</h2>
-    <img src="../assets/SVG/bolletjes.svg" alt="bolletjes">
-    </div>
-    <div class="level__pacman">
-    <img class="level__pacman--pacman" src="" alt="">
+    <img src="../assets/SVG/bolletjes.svg" alt="bolletjes" class="bolletjes">
     </div>
     <div class="level__2--wrapper">
     <p class="level__text">Het boek die zich groten deels zelf in een virtuele Game wereld afspeelt is voor elke game liefhebber een genot om te lezen. De wereld refereert niet enkel naar bestaande games maar toont je ook een inkijk in de videogame cultuur als een geheel. </p>
-    <img src="../assets/SVG/bolletjes.svg" alt="bolletjes">
+    <img src="../assets/SVG/bolletjes.svg" alt="bolletjes" class="bolletjes">
     <p class="level__text">Dit wil natuurlijk niet zeggen dat het lezen van dit boek een goede videogame kennis vraagt. De alledaagse leesliefhebber zal dan misschien de subtiele hints of referenties niet altijd doorhebben des al niet te min blijven de spanning, intrige en personages universele geliefde elementen.</p>
-    <img src="../assets/SVG/bolletjes.svg" alt="bolletjes">
+    <img src="../assets/SVG/bolletjes.svg" alt="bolletjes" class="bolletjes" >
     <p class="level__text">Een groot deel van het boek bestaat er ook uit dat de personages verscheidene easter eggs in de game moet zien te vinden. Easter eggs of te wel onverwachte of ongedocumenteerde features die vaak in games voorkomen zijn dan ook zelf in het boek verstopt en een zorgen er voor dat aandacht speurders een reden hebben om het boek een paar keer opnieuw door te lezen </p>
     </div>
     </div>
-  <img src="assets/SVG/mannetje.svg" alt="pacman mannetjes" width="500">
+  <img class="pacman__mannetjes" src="assets/SVG/mannetje.svg" alt="pacman mannetjes" width="500">
   </article>
   <article class="level level__3">
     <div class="level__3-wrapper">
@@ -78,7 +75,7 @@
     </div>
   </article>
   <article class="level level__6">
-    <img src="../assets/gifs/joystick.gif" alt="">
+    <img class="joystick-gif" src="../assets/gifs/joystick.gif" alt="">
     <h2 class="level__title">you died</h2>
     <div class="level__6-wrapper">
     <p class="level__text">Bezoek onze shop om extra levens te bemachtigen. Ook het boe Ready player One en de andere boeken uit onze science-fiction reeks zijn beschikbaar in een exclusief uitgave apart of  als reeks.</p>

@@ -1,0 +1,236 @@
+
+@media only screen and (max-width: 1570px) {
+
+  .level__3--films {
+    font-size: 1.6rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+  .longread {
+    font-size: 1.5rem;
+
+    & .level__5 {
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+
+      & .level__5-wrapper {
+        width: 40vw;
+        text-align: center;
+      }
+    }
+
+    & .level__6 {
+      padding-top: 10rem;
+      padding-bottom: 8rem;
+
+    }
+
+    & .level__4 {
+
+      & .level__4-wrapper {
+        width: 19vw;
+        text-align: center;
+        line-height: 1.9;
+      }
+    }
+
+    & .longread__missie {
+      font-size: var(--fontSizeSmall);
+    }
+
+    & .level__1 {
+
+      & .level__text--left {
+        grid-column: 2;
+        width: 80vw;
+        margin-bottom: 3rem;
+        text-align: center;
+      }
+
+      & .text__wrapper {
+
+        & .level__text--right {
+          grid-column: 2;
+          width: 80vw;
+          margin-bottom: 3rem;
+          text-align: center;
+        }
+
+      }
+    }
+
+    & .level__3 {
+
+      & .level__3-wrapper {
+        grid-column: 2/4;
+        grid-row: 1;
+        display: flex;
+        justify-content: center;
+
+        & .level__title--3 {
+          font-size: 4.2rem;
+        }
+      }
+
+      & .death {
+        grid-column: 2/4;
+        grid-row: 1;
+        background-image: none;
+        padding-right: 1vw;
+        text-align: ;
+      }
+
+      & .film {
+        grid-column: 1;
+        grid-row: 2;
+      }
+
+      & .films-wrapper {
+        width: 65vw;
+        grid-column: 2/5;
+        grid-row: 2;
+
+        & .level__link {
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+  }
+
+  .level__3--films {
+    font-size: 1.3rem;
+  }
+
+  .level__2-container {
+    padding: 1rem 2rem;
+  }
+
+  .bolletjes {
+    width: 15vw;
+  }
+
+  .left-2 {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  .longread {
+    font-size: 1.2rem;
+
+    & .level__5 {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      background-image: url('../assets/SVG/tetris_2.svg');
+      background-position: left bottom;
+
+      & .level__5-wrapper {
+        width: 50vw;
+        text-align: center;
+      }
+    }
+
+    & .level__4 {
+
+      & .level__4-wrapper {
+        width: 23vw;
+        text-align: center;
+        line-height: 1.9;
+      }
+    }
+
+    & .longread__missie {
+      font-size: var(--fontSizeTiny);
+    }
+  }
+
+  .level__3--films {
+    font-size: 1.6rem;
+    grid-template-columns: 1fr .8fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .level__2--wrapper {
+    width: 50vw;
+    text-align: center;
+
+  }
+
+  .longread {
+
+    & .level__1 {
+
+      & .level__text--left {
+        grid-column: 2;
+        border-left: none;
+        border-right: none;
+        border-radius: 0rem;
+        margin-bottom: 3rem;
+        text-align: center;
+      }
+
+      & .text__wrapper {
+
+        & .level__text--right {
+          display: flex;
+          justify-content: center;
+          width: 100vw;
+          grid-column: 2;
+          border-left: none;
+          border-right: none;
+          border-radius: 0rem;
+          margin-bottom: 3rem;
+          text-align: center;
+        }
+
+      }
+    }
+
+    & .level__3 {
+
+      & .level__3-wrapper {
+
+        & .level__title--3 {
+          font-size: 2rem;
+        }
+      }
+
+      & .films-wrapper {
+
+        & .level__link {
+          margin-top: 1rem;
+          grid-column: 1/3;
+        }
+      }
+    }
+
+  }
+}
+
+@media only screen and (max-width: 500px) {
+
+  .longread {
+
+    & .level__3 {
+
+      & .level__3-wrapper {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .level__3--films {
+    font-size: 1.6rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+}

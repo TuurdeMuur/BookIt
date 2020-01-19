@@ -2,10 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php echo $css;?>
-    <style>
-      #anim{max-width: 1000px;margin: 0 auto}
-    </style>
     <link rel="stylesheet" href="https://use.typekit.net/cfm1xzq.css">
   </head>
   <?php $currentpage = $_SERVER['REQUEST_URI'] ?>
@@ -39,7 +37,7 @@
   <li class="header__under--item mandje"><a href="index.php?page=mandje"><img src="./assets/SVG/mandje.svg" width="25" alt="mandje"><span class="cart-items"><?php echo $numItems;?></span></div></a></li>
   </ul>
   <?php endif; ?>
-  <body>
+  <body class="body">
 
     <main>
       <?php if ($currentpage != $badpage):?>

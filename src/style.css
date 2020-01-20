@@ -391,8 +391,12 @@ a {
 .sub-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   & .sub__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     & .sub__item--quote {
       font-weight: var(--fontWeightBold);
@@ -563,7 +567,9 @@ a {
 
   & .input {
     font-size: var(--fontSizeSmall);
+    margin-bottom: 1rem;
     width: 40rem;
+    border: solid grey .1rem;
   }
 
   & .form__steet--postcode {
@@ -640,10 +646,172 @@ a {
   width: 2vw;
 }
 
+.levering {
+  background-image: url(../src/assets/SVG/dottet.svg);
+  background-repeat: no-repeat;
+  padding-top: .5rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+}
+
 @media only screen and (max-width: 1250px) {
 
+  .abo-lijntje {
+    height: 20vw;
+  }
+
+  .sub-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    & .sub__item {
+
+      & .sub__item--quote {
+        font-weight: var(--fontWeightBold);
+        color: var(--humoRedColor);
+        font-size: var(--fontSizeTiny);
+        margin-top: 2rem;
+      }
+
+      & .books__book--title {
+        font-weight: var(--fontWeightBold);
+        font-size: var(--fontSizeSmall);
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+      }
+
+      & .books__book--order {
+        font-weight: var(--fontWeightLight);
+        font-size: var(--fontSizeSmall);
+        color: var(--humoRedColor);
+
+        & .pijltje-sub {
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+
+  .books {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .books__explain {
+    font-size: 1.5rem;
+  }
+
+  .book-wrapper {
+
+    & .books__book {
+
+      & .books__book--wrapper {
+        justify-content: center;
+
+        & .books__book--autor {
+          font-size: 1rem;
+        }
+
+        & .books__book--title {
+          font-size: 1.5rem;
+          margin-top: 1rem;
+        }
+
+        & .books__book--text {
+          font-size: 1rem;
+          line-height: 1.4;
+          margin-top: 1rem;
+        }
+
+        & .books__book--order {
+          font-size: 1.5rem;
+          line-height: 1.4;
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+
+  .uniek {
+    width: 12rem;
+  }
+
+  .title__wrapper {
+
+    & .section__title {
+      font-size: 2rem;
+    }
+  }
+
+  .humo-wrapper {
+    justify-content: space-evenly;
+  }
+
+  .section__humo--item {
+    height: 25rem;
+
+  }
+
+  .product__title {
+    font-size: 2rem;
+  }
+
+  .product__link {
+    font-size: 1.4rem;
+  }
+
+  .reeks-wrapper {
+    grid-template-columns: 30vw 22vw 22vw;
+    grid-template-rows: 1fr 20rem;
+    justify-content: center;
+
+    & .section__reeks--item {
+      background-color: none;
+    }
+
+    & .boek {
+      grid-column: 1;
+      grid-row: 1;
+      justify-content: center;
+    }
+
+    & .ereader {
+      grid-column: 1;
+      grid-row: 2/4;
+      height: 20rem;
+    }
+
+    & .reeks {
+      grid-column: 2/4;
+      grid-row: 1;
+    }
+
+    & .steun {
+      grid-column: 3;
+      grid-row: 2;
+      display: flex;
+      align-items: column;
+      justify-content: space-between;
+    }
+
+    & .wijzer {
+      grid-column: 2;
+      grid-row: 2;
+      display: flex;
+      align-items: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+  }
+
   .recht {
-    display: none;
+    height: 23vw;
   }
 
   .header {
@@ -664,6 +832,56 @@ a {
 
 @media only screen and (max-width: 800px) {
 
+  .cart__product {
+    width: 74vw;
+    display: grid;
+    grid-template-columns: 8fr 4fr .5fr;
+    grid-gap: 2rem;
+    background-image: url('./assets/SVG/dottet.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+    padding-top: 3rem;
+    font-weight: 900;
+
+    & .cart__product--specifics {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--humoRedColor);
+      font-weight: 300;
+
+      & .hoeveelheid {
+        width: 4rem;
+        color: var(--humoRedColor);
+        font-weight: 300;
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    & .cart__product--remove {
+      color: white;
+      font-size: var(--fontSizeSmall);
+      background-color: var(--humoRedColor);
+      border: none;
+      width: 3rem;
+      order: 3;
+      height: 3rem;
+    }
+  }
+
+  .book-wrapper {
+    justify-content: center;
+    grid-template-columns: 70vw;
+  }
+
+  .recht {
+    display: none;
+  }
+
   .header {
 
     & .header__above {
@@ -677,6 +895,109 @@ a {
 }
 
 @media only screen and (max-width: 660px) {
+
+  .order__name {
+    width: 30rem;
+  }
+
+  .title__wrapper {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .wrapper {
+
+    & .description {
+      font-weight: var(--fontWeightlight);
+      margin-bottom: .5rem;
+      font-size: var(--fontSizeTiny);
+    }
+
+    & .input {
+      font-size: var(--fontSizeTiny);
+      margin-bottom: 1rem;
+      width: 20rem;
+      border: solid grey .1rem;
+    }
+
+    & .form__steet--postcode {
+      width: 7rem;
+    }
+
+    & .form__steet--straat {
+      width: 25rem;
+    }
+  }
+
+  .checkout {
+    justify-content: center;
+  }
+
+  .form__betaling {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form__betaling--img {
+    width: 20vw;
+  }
+
+  .form-check {
+    width: 74vw;
+    margin-left: 3rem;
+  }
+
+  .mandje__links {
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+
+  .cart-prijs__1 {
+    display: none;
+  }
+
+  .cart__totaal {
+    margin-right: 9vw;
+  }
+
+  .cart__product--title {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .cart__product {
+    margin-left: 7rem;
+  }
+
+  .papier {
+    background-image: url(../src/assets/SVG/dottet.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 3rem;
+    margin-bottom: 4rem;
+  }
+
+  .abo-lijntje {
+    display: none;
+  }
+
+  .sub-wrapper {
+    flex-direction: column;
+    align-items: left;
+  }
+
+  .book-title {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  .books__explain {
+    font-size: 1.3rem;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-bottom: 2rem;
+  }
 
   .loep {
     background-image: url(../src/assets/SVG/dottet.svg);

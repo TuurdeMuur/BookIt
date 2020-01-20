@@ -17,8 +17,8 @@
                     <h3 class="cart__product--title"><?php echo $item['product']['name'];?></h3>
                     <button type="submit" class="cart__product--remove" name="remove" value="<?php echo $item['product']['id'];?>">x</button>
                     <div class="cart__product--specifics">
-                        <p class="cart__product--specific cart-prijs"  ><span class="item_price">€ <?php echo $item['product']['price']?></span></p>
-                        <input type="text" name="quantity[<?php echo $item['product']['id'];?>]" value="<?php echo $item['quantity'];?>" class="cart__product--specific hoeveelheid">
+                        <p class="cart__product--specific cart-prijs cart-prijs__1"  ><span class="item_price">€ <?php echo $item['product']['price']?></span></p>
+                        <p>x</p><input type="text" name="quantity[<?php echo $item['product']['id'];?>]" value="<?php echo $item['quantity'];?>" class="cart__product--specific hoeveelheid">
                         <p class="cart__product--specific cart-prijs cart-prijs__totaal">€ <?php echo $itemTotal?> </p>
                      </div>
                 </article>

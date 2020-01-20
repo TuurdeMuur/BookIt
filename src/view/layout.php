@@ -58,7 +58,7 @@
     <?php if ($currentpage != $badpage): ?>
     <footer class="footer">
     <p class="footer__text">Om meer te weten te komen over het boek die deze week zijn de kijker staat</p>
-    <a class="footer__link" href="">Klik hier</a>
+    <a class="footer__link" href="index.php?page=long">Klik hier</a>
   </footer>
   <?php endif; ?>
     <?php echo $js; ?>

@@ -5,7 +5,7 @@
   <h2 class='section__title' >" . $product['name'] ."</h2>
   </div>";
   echo "<div class='article__wrapper'>";
-  echo "<img class='article__img' src='../assets/humo_papier.png' alt='product foto'>";
+  echo "<img class='article__img' src='../assets/" . $product['img'] . ".png' alt='product foto'>";
   echo "<div class='article__text'>";
   echo "<p class='article__text--autor'>" . $product['author'] . "</p>";
   echo " <p class='article__text--description'>" . $product['description'] . "</p>";
@@ -28,7 +28,7 @@
   <h2 class='section__title' >" . $product['name'] ."</h2>
   </div>";
     echo "<div class='article__wrapper'>";
-    echo "<img class='article__img' src='../assets/humo_digitaal.png' alt='product foto'>";
+    echo "<img class='article__img' src='../assets/" . $product['img'] . ".png' alt='product foto'>";
     echo "<div class='article__text'>";
     echo "<p class='article__text--autor'>" . $product['author'] . "</p>";
     echo " <p class='article__text--description'>" . $product['description'] . "</p>";
@@ -51,7 +51,7 @@
     <h2 class='section__title' >" . $product['name'] ."</h2>
     </div>";
     echo "<div class='article__wrapper'>";
-    echo "<img class='article__img' src='../assets/leeslicht.png' alt='product foto'>";
+    echo "<img class='article__img' src='../assets/" . $product['img'] . ".png' alt='product foto'>";
     echo "<div class='article__text'>";
     echo "<p class='article__text--autor'>" . $product['author'] . "</p>";
     echo " <p class='article__text--description'>" . $product['description'] . "</p>";
@@ -74,7 +74,7 @@
     <h2 class='section__title' >" . $product['name'] ."</h2>
     </div>";
     echo "<div class='article__wrapper'>";
-    echo "<img class='article__img' src='' alt='product foto'>";
+    echo "<img class='article__img' src='../assets/" . $product['img'] . ".png'>";
     echo "<div class='article__text'>";
     echo "<p class='article__text--autor'>" . $product['author'] . "</p>";
     echo " <p class='article__text--description'>" . $product['description'] . "</p>";
@@ -98,7 +98,7 @@
     <h2 class='section__title' >" . $product['name'] ."</h2>
     </div>";
     echo "<div class='article__wrapper'>";
-    echo "<img class='article__img' src='../assets/boek/" . $product['name'] . ".png' alt='product foto'>";
+    echo "<img class='article__img' src='../assets/boek/" . $product['img'] . ".png' alt='product foto'>";
     echo "<div class='article__text'>";
     echo "<p class='article__text--autor'>" . $product['author'] . "</p>";
     echo " <p class='article__text--description'>" . $product['description'] . "</p>";
@@ -120,7 +120,7 @@
   <h2 class='section__title' >" . $product['name'] ."</h2>
   </div>";
   echo "<div class='article__wrapper'>";
-  echo "<img class='article__img' src='../assets/" . $product['name'] . ".png' alt='product foto'>";
+  echo "<img class='article__img' src='../assets/" . $product['img'] . ".png' alt='product foto'>";
   echo "<div class='article__text'>";
   echo "<p class='article__text--autor'>" . $product['author'] . "</p>";
   echo " <p class='article__text--description'>" . $product['description'] . "</p>";

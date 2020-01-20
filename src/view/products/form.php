@@ -2,8 +2,9 @@
 <div class="title__wrapper">
   <h2 class="section__title" >Mijn bestelling</h2>
   </div>
-<form action="index.php" method="post" >
+<form action="index.php" method="post" class="form-check" >
 <input type="hidden" name="action" value="insertOrder">
+<?php if (!empty($_SESSION['cart'])){ ?>
 <?php foreach($_SESSION['cart'] as $product): ?>
 <input type="hidden" name="product" value="<?php echo $product['product']['id'] ?>">
 <p class="order__name"></p>
@@ -12,6 +13,7 @@
 <input class="order" type="text" name="quantity" value="(<?php echo $product['quantity'] ?>x)">
 </div>
 <?php endforeach ?>
+<?php };?>
                 <div class="form__name section">
                     <div class="form__name--first wrapper">
                         <label class="form__name--title description " for="voornaam">Voornaam</label>
@@ -57,7 +59,10 @@
                             echo $_POST['gemeente'];
                         }?>">
                 </div>
-
+                <div class= check>
+                <input type="checkbox" value="">
+                <p>ik wil dat het pakje geleverd word op een andere plaats</p>
+                </div>
                 <div class="levering">
                 <p class="intersection">Leveringsadres (optioneel)</p>
                 <div class="wrapper"><label class=" description" for="gemeente(2)">Gemeente</label>

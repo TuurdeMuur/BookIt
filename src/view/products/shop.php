@@ -5,13 +5,33 @@
   </div>
   <div class="reeks-wrapper">
   <article class="section__reeks--item boek product">
-    <img class="product__img" src="../assets/boek.png" alt="boek">
+  <picture class="product__img">
+  <source
+       media="(max-width: 660px)"
+       srcset ="../assets/boek.png"
+       >
+       <source
+       media="(max-width: 1250px)"
+       srcset ="../assets/boekTiny.png"
+       >
+       <img class="product__img" src="../assets/boek.png" alt="boek">
+     </picture>
     <p class="product__quote">Kies jouw favoriet</p>
     <h3 class="product__title">Elk boek apart</h3>
     <div class="product__link"><img class="product__link--img" src="../assets/pijltje.svg" alt="pijltje"><a class="product__link--a" href="index.php?page=book">Bekijk</a></div>
    </article>
    <article class="section__reeks--item ereader product">
-   <img class="product__img" src="../assets/ereader.png" alt="boek">
+     <picture class="product__img">
+     <source
+       media="(max-width: 660px)"
+       srcset ="../assets/ereader.png"
+       >
+       <source
+       media="(max-width: 1250px)"
+       srcset ="../assets/ereaderTiny.png"
+       >
+       <img class="product__img" src="../assets/ereader.png" alt="boek">
+     </picture>
     <p class="product__quote">Radicaal digitaal</p>
     <h3 class="product__title">E-book versie</h3>
     <div class="product__link"><img class="product__link--img" src="../assets/pijltje.svg" alt="pijltje"><a class="product__link--a" href="index.php?page=book">Bekijk</a></div>
@@ -20,7 +40,7 @@
    <picture class="product__img">
    <source
    media="(max-width: 660px)"
-   srcset ="../assets/volledigereeksTiny.png"
+   srcset ="../assets/volledigereeksSmall.png"
    >
    <source
    media="(max-width: 1250px)"
@@ -29,19 +49,47 @@
    <img src="../assets/volledigereeks.png" alt="volledige reeks"/>
    </picture>
     <div class="black">
-    <p class="product__quote quote-black">UNIEKE-VERZAMELING</p>
+    <p class="product__quote quote-black uniek">UNIEKE-VERZAMELING</p>
     <h3 class="product__title title-black">Volledige reeks</h3>
     <div class="product__link"><img class="product__link--img" src="../assets/pijltje-wit.svg" alt="pijltje"><a class="link-black" href="index.php?page=product&id=13">Bekijk</a></div>
     </div>
    </article>
    <article class="section__reeks--item steun product">
-   <img class="product__img" src="../assets/boekensteun.png" alt="boek">
+   <picture class="product__img">
+     <source
+       media="(max-width: 660px)"
+       srcset ="../assets/boekensteun.png"
+       >
+       <source
+       media="(max-width: 840px)"
+       srcset ="../assets/boekensteunMini.png"
+       >
+       <source
+       media="(max-width: 1250px)"
+       srcset ="../assets/boekensteunTiny.png"
+       >
+       <img class="product__img" src="../assets/boekensteun.png" alt="boek">
+       </picture>
     <p class="product__quote">opbergplezier</p>
     <h3 class="product__title">Boekensteun</h3>
     <div class="product__link"><img class="product__link--img" src="../assets/pijltje.svg" alt="pijltje"><a class="product__link--a" href="index.php?page=product&id=2">Bekijk</a></div>
    </article>
    <article class="section__reeks--item wijzer product">
-   <img class="product__img" src="../assets/bladwijzer.png" alt="boek">
+   <picture class="product__img">
+     <source
+       media="(max-width: 660px)"
+       srcset ="../assets/bladwijzer.png"
+       >
+       <source
+       media="(max-width: 840px)"
+       srcset ="../assets/bladwijzerMini.png"
+       >
+       <source
+       media="(max-width: 1250px)"
+       srcset ="../assets/bladwijzerTiny.png"
+       >
+       <img class="product__img" src="../assets/bladwijzer.png" alt="boek">
+      </picture>
     <p class="product__quote">Leesplezier</p>
     <h3 class="product__title">Bladwijzer</h3>
     <div class="product__link"><img class="product__link--img pijltje" src="../assets/pijltje.svg" alt="pijltje"><a class="product__link--a" href="index.php?page=product&id=1">Bekijk</a></div>
@@ -57,11 +105,6 @@
   <article class="section__humo--item product product__abo">
   <picture class="product__img">
   <source
-   media="(max-width: 362px)"
-   srcset ="../assets/abonnementTiny.png"
-   >
-   <source>
-  <source
    media="(max-width: 464px)"
    srcset ="../assets/abonnementSmall.png"
    >
@@ -70,10 +113,15 @@
    srcset ="../assets/abonnementMedium.png"
    >
    <source
-   media="(max-width: 1250px)"
+   media="(max-width: 800px)"
+   srcset ="../assets/abonnementTiny.png"
+   >
+   <source>
+   <source
+   media="(max-width: 1300px)"
    srcset ="../assets/abonnementSmall.png"
    >
-   <img class="product__img" src="../assets/abonnementen.png" alt="boek">
+   <img class="product__img" src="../humopapier.png" alt="boek">
    </picture>
     <p class="product__quote ">Wekelijks Thuis</p>
     <div class="title-wrapper margin">
@@ -121,6 +169,10 @@
    media="(max-width: 660px)"
    srcset ="../assets/leeslicht.png"
    >
+   <source
+   media="(max-width: 1250px)"
+   srcset ="../assets/leeslichtTiny.png"
+   >
    <img class="product__img" src="../assets/leeslicht.png" alt="boek">
    </picture>
   <div class="black">
@@ -135,6 +187,10 @@
    media="(max-width: 660px)"
    srcset ="../assets/vergrootglas.png"
    >
+   <source
+   media="(max-width: 1250px)"
+   srcset ="../assets/vergrootglasTiny.png"
+   >
    <img class="product__img" src="../assets/vergrootglas.png" alt="boek">
    </picture>
     <p class="product__quote">onder de loep</p>
@@ -146,6 +202,10 @@
    <source
    media="(max-width: 660px)"
    srcset ="../assets/boeklicht.png"
+   >
+   <source
+   media="(max-width: 1250px)"
+   srcset ="../assets/boeklichtTiny.png"
    >
    <img class="product__img" src="../assets/boeklicht.png" alt="boek">
    </picture>
@@ -160,6 +220,10 @@
    <source
    media="(max-width: 660px)"
    srcset ="../assets/professioneel.png"
+   >
+   <source
+   media="(max-width: 1250px)"
+   srcset ="../assets/professioneelTiny.png"
    >
    <img class="product__img" src="../assets/professioneel.png" alt="boek">
    </picture>

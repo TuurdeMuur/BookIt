@@ -39,7 +39,16 @@ $routes = array(
   'form' => array(
     'controller' => 'Products',
     'action' => 'form'
+  ),
+  'form' => array(
+    'controller' => 'Products',
+    'action' => 'form'
+  ),
+  'long' => array(
+    'controller' => 'Products',
+    'action' => 'long'
   )
+
 );
 
 if(empty($_GET['page'])) {

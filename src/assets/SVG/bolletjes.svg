@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150.929" height="74.297" viewBox="0 0 150.929 74.297">
+  <defs>
+    <filter id="Ellipse_131" x="35.954" y="0" width="74.297" height="74.297" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="11" result="blur"/>
+      <feFlood flood-color="#fff" flood-opacity="0.949"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_132" x="76.631" y="0" width="74.297" height="74.297" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="11" result="blur-2"/>
+      <feFlood flood-color="#fff" flood-opacity="0.949"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_133" x="0" y="0" width="74.297" height="74.297" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="11" result="blur-3"/>
+      <feFlood flood-color="#fff" flood-opacity="0.949"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_384" data-name="Group 384" transform="translate(-1067.222 -3758.82)">
+    <g transform="matrix(1, 0, 0, 1, 1067.22, 3758.82)" filter="url(#Ellipse_131)">
+      <ellipse id="Ellipse_131-2" data-name="Ellipse 131" cx="4.149" cy="4.149" rx="4.149" ry="4.149" transform="translate(68.95 33)" fill="#fff"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 1067.22, 3758.82)" filter="url(#Ellipse_132)">
+      <ellipse id="Ellipse_132-2" data-name="Ellipse 132" cx="4.149" cy="4.149" rx="4.149" ry="4.149" transform="translate(109.63 33)" fill="#fff"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 1067.22, 3758.82)" filter="url(#Ellipse_133)">
+      <ellipse id="Ellipse_133-2" data-name="Ellipse 133" cx="4.149" cy="4.149" rx="4.149" ry="4.149" transform="translate(33 33)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

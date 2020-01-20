@@ -1,0 +1,22 @@
+:root {
+  --humoRedColor: #ee080c;
+  --humoBlackColor: black;
+  --humoGreyColor: #f8f8f4;
+  --longPinkColor: #dd6a99;
+  --longBlueColor: #50b9af;
+  --fontSizeTiny: 1.2rem;
+  --fontSizeSmall: 2rem;
+  --fontSizeMedium: 3rem;
+  --fontSizeBig: 4rem;
+  --fontSizeHuge: 4rem;
+  --fontWeightLight: 300;
+  --fontWeightNormal: 500;
+  --fontWeightBold: 600;
+  --marginTiny: 1rem;
+  --marginSmall: 2rem;
+  --marginBig: 5rem;
+  --paddingTiny: .5rem;
+  --paddingSmall: 1rem;
+  --paddingMedium: 2rem;
+  --paddingBig: 3rem;
+}

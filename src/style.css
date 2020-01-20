@@ -27,6 +27,14 @@ a {
   text-decoration: none;
 }
 
+.article__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--humoGreyColor);
+}
+
 .header {
   margin-top: var(--marginBig);
   display: flex;
@@ -181,7 +189,7 @@ a {
   }
 
   & .dropdown {
-    opacity: 0%;
+    display: none;
   }
 }
 
@@ -432,6 +440,7 @@ a {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-columns: 1fr 2fr;
+  grid-gap: 2rem;
   color: white;
 
   & .article__text {
@@ -446,6 +455,7 @@ a {
 
     & .article__text--description {
       font-size: var(--fontSizeSmall);
+      line-height: 1.4;
       margin: 2rem 0;
     }
 
@@ -660,6 +670,25 @@ a {
 }
 
 @media only screen and (max-width: 1250px) {
+
+  .article__wrapper {
+
+    & .article__text {
+
+      & .article__text--description {
+        font-size: var(--fontSizeTiny);
+        line-height: 1.6;
+      }
+
+      & .product__wrapper--text-button {
+        background-color: var(--humoRedColor);
+        border: none;
+        color: white;
+        text-transform: uppercase;
+        margin-top: 2rem;
+      }
+    }
+  }
 
   .abo-lijntje {
     height: 20vw;
@@ -896,6 +925,38 @@ a {
 
 @media only screen and (max-width: 660px) {
 
+  .toggle-label {
+    background-image: url(../src/assets/SVG/driehoek.svg);
+    background-repeat: no-repeat;
+    width: 5vw;
+    height: 5vw;
+    background-position: center;
+  }
+
+  .toggle {
+    display: none;
+  }
+
+  .toggleTwo {
+    display: none;
+  }
+
+  .toggleThree {
+    display: none;
+  }
+
+  .article {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .article__wrapper {
+    grid-template-columns: 74vw;
+    grid-template-rows: 1fr 35rem 4rem;
+  }
+
   .order__name {
     width: 30rem;
   }
@@ -1083,7 +1144,7 @@ a {
     }
 
     & .dropdown {
-      opacity: 100%;
+      display: none;
     }
   }
 

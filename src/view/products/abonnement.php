@@ -25,7 +25,7 @@
    </picture>
 <p class="sub__item--quote">oldschool</p>
   <h3 class="books__book--title">Papieren versie</h3>
-  <a class="books__book--order" href="index.php?page=product&id=17"><img class="pijltje-sub" src="../assets/pijltje.svg" alt="pijltje" width="20">Bestel</a>
+  <a class="books__book--order" href="index.php?page=product&id=16"><img class="pijltje-sub" src="../assets/pijltje.svg" alt="pijltje" width="20">Bestel</a>
 </article>
 <img class="abo-lijntje" src="../assets/SVG/dottet_recht.svg" alt="lijntje">
 <article class="sub__item">
@@ -46,7 +46,7 @@
    </picture>
 <p class="sub__item--quote">radicaal digitaal</p>
   <h3 class="books__book--title">Digitale versie</h3>
-  <a class="books__book--order" href="index.php?page=product&id=16"><img class="pijltje-sub" src="../assets/pijltje.svg" alt="pijltje" width="20" >Bestel</a>
+  <a class="books__book--order" href="index.php?page=product&id=17"><img class="pijltje-sub" src="../assets/pijltje.svg" alt="pijltje" width="20" >Bestel</a>
 </article>
 </div>
 </section>

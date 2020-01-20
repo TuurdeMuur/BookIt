@@ -1,61 +1,57 @@
 require('./style.css');
 {
-  const $todosList = document.getElementById(`todosList`),
-    $insertTodoForm = document.getElementById(`insertTodoForm`),
-    $inputText = document.getElementById(`inputText`);
 
   const init = () => {
-    if ($todosList) {
-      loadTodos();
-    }
-    if ($insertTodoForm) {
-      $insertTodoForm.addEventListener(`submit`, handleSubmitInsertTodoForm);
-    }
+    toggleBooks();
+    toggleHumo();
+    toggleGadgets();
   };
 
-  const loadTodos = () => {
-    fetch(`index.php`, {
-      headers: new Headers({
-        Accept: `application/json`
-      })
-    })
-      .then(r => r.json())
-      .then(data => handleLoadTodos(data));
-  };
+  // const checkWidth = () => {
+  // window.addEventListener('resize', function() {
+  // const $screenWidth = screen.width;
+  // const $books = document.querySelector('.toggle');
+  //if (this < 660) {
+  //   $books.style.display = 'none'; //  } // });
+  //};
 
-  const handleLoadTodos = data => {
-    $todosList.innerHTML = data.map(todo => createTodoListItem(todo)).join(``);
-  };
-
-  const createTodoListItem = todo => {
-    return `<li>${todo.text}</li>`;
-  };
-
-  const handleSubmitInsertTodoForm = e => {
-    e.preventDefault();
-    fetch($insertTodoForm.getAttribute('action'), {
-      headers: new Headers({
-        Accept: `application/json`
-      }),
-      method: 'post',
-      body: new FormData($insertTodoForm)
-    })
-      .then(r => r.json())
-      .then(data => handleLoadSubmit(data));
-  };
-
-  const handleLoadSubmit = data => {
-    const $errorText = document.querySelector(`.error--text`);
-    $errorText.textContent = '';
-    if (data.result === 'ok') {
-      $inputText.value = '';
-      loadTodos();
-    } else {
-      if (data.errors.text) {
-        $errorText.textContent = data.errors.text;
+  const toggleBooks = () => {
+    const $dropOne = document.getElementById('dropOne');
+    const $books = document.querySelector('.toggle');
+    $dropOne.addEventListener('change', function() {
+      if (this.checked) {
+        $books.style.display = 'inline';
+      } else {
+        $books.style.display = 'none';
       }
-    }
+    });
   };
+
+  const toggleHumo = () => {
+    const $dropTwo = document.querySelector('.dropdown__2');
+    const $humo = document.querySelector('.toggleTwo');
+    $dropTwo.addEventListener('change', function() {
+      if (this.checked) {
+        $humo.style.display = 'inline';
+      } else {
+        $humo.style.display = 'none';
+      }
+    });
+  };
+
+  const toggleGadgets = () => {
+    const $dropThree = document.querySelector('.dropdown__3');
+    const $gadgets = document.querySelector('.toggleThree');
+    $dropThree.addEventListener('change', function() {
+      if (this.checked) {
+        $gadgets.style.display = 'inline';
+      } else {
+        $gadgets.style.display = 'none';
+      }
+    });
+  };
+
+
 
   init();
 }

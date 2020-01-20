@@ -1,8 +1,10 @@
 <section class="section section__reeks">
   <div class="title__wrapper">
   <h2 class="section__title" >HUMO-Boekenreeks</h2>
-  <input class="dropdown dropdown__1" type="checkbox">
+  <input class="dropdown dropdown__1" id="dropOne" type="checkbox">
+  <label for="dropOne" class="toggle-label"></label>
   </div>
+  <div class="toggle">
   <div class="reeks-wrapper">
   <article class="section__reeks--item boek product">
   <picture class="product__img">
@@ -95,12 +97,16 @@
     <div class="product__link"><img class="product__link--img pijltje" src="../assets/pijltje.svg" alt="pijltje"><a class="product__link--a" href="index.php?page=product&id=1">Bekijk</a></div>
    </article>
    </div>
+   </div>
 </section>
 <section class="section section__humo">
+
   <div class="title__wrapper">
   <h2 class="section__title" >HUMO Gerelateerd</h2>
-  <input class="dropdown dropdown__2" type="checkbox">
+  <input id="dropTwo" class="dropdown dropdown__2" type="checkbox">
+  <label for="dropTwo" class="toggle-label"></label>
   </div>
+  <div class="toggleTwo">
   <div class="humo-wrapper">
   <article class="section__humo--item product product__abo">
   <picture class="product__img">
@@ -121,7 +127,7 @@
    media="(max-width: 1300px)"
    srcset ="../assets/abonnementSmall.png"
    >
-   <img class="product__img" src="../humopapier.png" alt="boek">
+   <img class="product__img" src="../assets/humopapier.png" alt="boek">
    </picture>
     <p class="product__quote ">Wekelijks Thuis</p>
     <div class="title-wrapper margin">
@@ -139,7 +145,7 @@
    <source>
    <source
    media="(max-width: 464px)"
-   srcset ="../assets/agendaSmall.png"
+   srcset ="../assets/agendaTiny.png"
    >
    <source
    media="(max-width: 660px)"
@@ -147,7 +153,7 @@
    >
    <source
    media="(max-width: 1250px)"
-   srcset ="../assets/agendaSmall.png"
+   srcset ="../assets/agendaTiny.png"
    >
    <img class="product__img" src="../assets/agenda.png" alt="boek">
    </picture>
@@ -156,12 +162,15 @@
     <div class="product__link margin"><img class="product__link--img pijltje" src="../assets/pijltje.svg" alt="pijltje"><a class="product__link--a" href="index.php?page=product&id=18">Bekijk</a></div>
    </article>
    </div>
+   </div>
 </section>
 <section class="section section__gadgets">
   <div class="title__wrapper">
   <h2 class="section__title" >Lees Gadgets</h2>
-  <input class="dropdown dropdown__1" type="checkbox">
+  <input id="dropThree" class="dropdown dropdown__3" type="checkbox">
+  <label for="dropThree" class="toggle-label"></label>
   </div>
+  <div class="toggleThree">
   <div class="gadget-wrapper">
   <article class="section__gadget--item product loep">
   <picture class="product__img">
@@ -231,5 +240,6 @@
     <h3 class="product__title">Professioneel <br> vergrootglas</h3>
     <div class="product__link"><img class="product__link--img" src="../assets/pijltje.svg" alt="pijltje"><a class="product__link--a" href="index.php?page=product&id=20">Bekijk</a></div>
    </article>
+   </div>
    </div>
 </section>

@@ -37,6 +37,7 @@ a {
 
 .note {
   font-size: 2.5rem;
+  width: 74vw;
 }
 
 .article__img {
@@ -545,16 +546,15 @@ a {
     font-weight: 300;
     margin-top: 1rem;
   }
+}
 
-  & .mandje__links--form {
-    color: black;
-    background-color: #ffeb00;
-    display: inline;
-    padding: var(--paddingSmall);
-    text-transform: uppercase;
-    font-weight: var(--fontWeightBold);
-  }
-
+.mandje__links--form {
+  color: black;
+  background-color: #ffeb00;
+  display: inline;
+  padding: var(--paddingSmall);
+  text-transform: uppercase;
+  font-weight: var(--fontWeightBold);
 }
 
 .cart__totaal {
@@ -574,33 +574,39 @@ a {
   }
 }
 
+.input {
+  font-size: var(--fontSizeTiny);
+  margin-bottom: 1rem;
+  width: 40rem;
+  border: solid grey .1rem;
+  padding: .5rem;
+}
+
+.kortingscode {
+  width: 15rem;
+  margin-right: 3rem;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
   margin-top: var(--marginSmall);
+}
 
-  & .description {
-    font-weight: var(--fontWeightlight);
-    margin-bottom: .5rem;
-    font-size: var(--fontSizeSmall);
-  }
+.form__steet--postcode {
+  width: 7rem;
+}
 
-  & .input {
-    font-size: var(--fontSizeSmall);
-    margin-bottom: 1rem;
-    width: 40rem;
-    border: solid grey .1rem;
-  }
+.form__steet--straat {
+  width: 50rem;
+}
 
-  & .form__steet--postcode {
-    width: 7rem;
-  }
-
-  & .form__steet--straat {
-    width: 50rem;
-  }
+.description {
+  font-weight: var(--fontWeightlight);
+  margin-bottom: .5rem;
+  font-size: var(--fontSizeSmall);
 }
 
 .intersection {
@@ -885,6 +891,15 @@ a {
 
 @media only screen and (max-width: 800px) {
 
+  .kortingscode {
+    font-size: 1.5rem;
+  }
+
+  .note-mand {
+
+    margin-left: 4rem;
+  }
+
   .cart__product {
     width: 74vw;
     display: grid;
@@ -958,7 +973,7 @@ a {
   }
 
   .note {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 
   .toggle-label {
@@ -1002,28 +1017,30 @@ a {
     margin-bottom: 3rem;
   }
 
-  .wrapper {
+  .description {
+    font-weight: var(--fontWeightlight);
+    margin-bottom: .5rem;
+    font-size: var(--fontSizeTiny);
+  }
 
-    & .description {
-      font-weight: var(--fontWeightlight);
-      margin-bottom: .5rem;
-      font-size: var(--fontSizeTiny);
-    }
+  .input {
+    font-size: var(--fontSizeTiny);
+    margin-bottom: 1rem;
+    width: 20rem;
+    border: solid grey .1rem;
+  }
 
-    & .input {
-      font-size: var(--fontSizeTiny);
-      margin-bottom: 1rem;
-      width: 20rem;
-      border: solid grey .1rem;
-    }
+  .kortingscode {
+    width: 10rem;
+    margin-right: 3rem;
+  }
 
-    & .form__steet--postcode {
-      width: 7rem;
-    }
+  .form__steet--postcode {
+    width: 7rem;
+  }
 
-    & .form__steet--straat {
-      width: 25rem;
-    }
+  .form__steet--straat {
+    width: 25rem;
   }
 
   .checkout {

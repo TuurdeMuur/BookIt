@@ -61,8 +61,8 @@
                             echo $_POST['gemeente'];
                         }?>">
                           </div>
-                <div class= check>
-                <input type="checkbox" value="">
+                <div class = "check">
+                <input class="dropFour" type="checkbox" value="levering" id="ander" >
                 <p>ik wil dat het pakje geleverd word op een andere plaats</p>
                 </div>
                 <div class="levering">
@@ -97,11 +97,13 @@
                             </label>
                         </div>
                     </div>
+                    <div>
+                    <input type="text" class="input kortingscode" placeholder="kortingscode" >
                 <input class="form__submit section" type="submit" value="verzend" >
+                </div>
                 <?php else: ?>
               <p class="note">bedankt voor uw bestelling, uw gegevens worden verwerkt. </p>
               <a  class="form-terug" href="index.php?page=shop"> <img src="../assets/pijltje.svg" alt="pijltje" width="20"> Terug naar shop</a>
               <?php endif ?>
 </form>
-
 </section>

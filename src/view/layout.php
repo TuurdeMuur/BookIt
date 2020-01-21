@@ -69,6 +69,5 @@
   </footer>
   <?php endif; ?>
     <?php echo $js; ?>
-    <script src="lottie.js"></script>
   </body>
 </html>

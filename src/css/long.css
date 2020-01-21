@@ -1,5 +1,5 @@
 .longread {
-  background-color: black;
+  background-color: #030303;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -248,6 +248,7 @@
   color: var(--longPinkColor);
 }
 
+
 .level__wrapper {
   grid-column: 2;
   display: flex;
@@ -267,7 +268,7 @@
 }
 
 .terug {
-  background-color: black;
+  background-color: #030303;
   width: 100vw;
   padding-top: 7rem;
   padding-bottom: 4rem;

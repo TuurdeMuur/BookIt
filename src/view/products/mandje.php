@@ -25,11 +25,14 @@
                     <button type="submit" id="update-cart" class="cart__totaal--update" name="action" value="update">update winkelwagentje</button>
                     </div>
                     </form>
-                    <a class="mandje__links--form" href="index.php?page=form">afrekenen</a>
                     <?php }else{ ?>
-                      <p>Oeps! er zit voorlopig niks in je mandje, haast je naar onze shop en ontdenk onze producten</p>
+                      <p class="note note-mand">Oeps! er zit voorlopig niks in je mandje, haast je naar onze shop en ontdenk onze producten</p>
                       <?php };?>
                       <div class="mandje__links">
+
   <a  class="mandje-terug" href="index.php?page=shop"> <img src="../assets/pijltje.svg" alt="pijltje" width="20"> Terug naar shop</a>
+  <?php if (!empty($_SESSION['cart'])):?>
+  <a class="mandje__links--form" href="index.php?page=form">afrekenen</a>
+  <?php endif?>
   </div>
 </section>

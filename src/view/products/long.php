@@ -1,10 +1,10 @@
 <section class="longread">
   <div class="longread__wrapper" id="anim">
   <h1 class="longread__title">Ready Player One</h1>
-  <img src="../assets/gifs/ReadyPlayerOne.gif" alt="title" width="1000" class="longread__gif">
+  <img src="../assets/gifs/playerone.gif" alt="title" width="1000" class="longread__gif">
   <p class="longread__missie">missie: Vind alle easter eggs en blijf in leven</p>
   </div>
-  <p class="longread__intro">Het negende boek uit onze reeks van 10 genaamd ready player one is zeker niet van de minst. Het boek geschreven door Ernest Cline is ondertussen verfilmd door niemand minder dan Steven Spielberg. Het boek speelt zichvooral af in en digitale wereld die cline volpropte met pop-culture en game refferenties vanuit zijn jeugd in de jaren 80 genaamd <span class="belangrijk">"easter eggs"</span>
+  <p class="longread__intro">Het negende boek uit onze reeks van 10 boeken is genaamd ready player one. Het boek geschreven door Ernest Cline is ondertussen verfilmd door de ondertussen legendarische regisseur Steven Spielberg. Het boek speelt zich vooral af in en digitale wereld die cline volpropte met pop-culture en game refferenties de zogenaamde <span class="belangrijk">"easter eggs"</span>
   </p>
   <article class="level level__1">
     <div class="level__wrapper">
@@ -21,7 +21,7 @@
     <img class="level__left left-2" src="../assets/SVG/left_2.svg" alt="trap" >
   </article>
   <article class="level level__2">
-    <img class="pacman" src="../assets/gifs/pacman_1.gif" alt="packman" width="200">
+    <img class="pacman" src="../assets/SVG/pacman.svg" alt="packman" width="200">
     <div class="level__2-container">
     <div class ="pacman-wrapper">
     <img src="../assets/SVG/bolletjes.svg" alt="bolletjes" class="bolletjes">
@@ -75,7 +75,7 @@
     </div>
   </article>
   <article class="level level__6">
-    <img class="joystick-gif" src="../assets/gifs/joystick.gif" alt="">
+    <img class="joystick-gif" src="../assets/SVG/joystick.svg" alt="joystick">
     <h2 class="level__title">you died</h2>
     <div class="level__6-wrapper">
     <p class="level__text">Bezoek onze shop om extra levens te bemachtigen. Ook het boe Ready player One en de andere boeken uit onze science-fiction reeks zijn beschikbaar in een exclusief uitgave apart of  als reeks.</p>

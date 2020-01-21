@@ -42,7 +42,7 @@ class ProductsController extends Controller {
       if ($_POST['action'] == 'add') {
         $this->_handleAdd();
         // TODO !!!
-        header('Location: ' . $_SERVER['REQUEST_URI']);
+        header('Location:  index.php?page=mandje');
         exit();
       }
       if ($_POST['action'] == 'empty') {
@@ -59,23 +59,12 @@ class ProductsController extends Controller {
       header('Location: index.php?page=mandje');
       exit();
     }
-    if(!empty($_POST['action'])){
-      if($_POST['action'] == 'checkout'){
-        $insertedOrder = $this->productsDAO->insertOrder($_POST);
-      }
-    }
 
   }
   public function form() {
-
-    if (!empty($_POST['checkout'])) {
-      $this->_handleDelete();
-      header('Location: index.php?page=form');
-      exit();
+    if(!empty($_POST['action'])) {
+      session_unset();
     }
-
-    $this->set('title', 'Checkout');
-    $this->set('currentPage', 'checkout');
 
     if(!empty($_POST['action'])){
       if($_POST['action'] == 'insertOrder'){

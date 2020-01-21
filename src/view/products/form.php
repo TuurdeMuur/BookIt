@@ -2,7 +2,7 @@
 <div class="title__wrapper">
   <h2 class="section__title" >Mijn bestelling</h2>
   </div>
-<form action="index.php" method="post" class="form-check" >
+<form action="index.php?page=form" method = "POST" class="form-check" >
 <input type="hidden" name="action" value="insertOrder">
 <?php if (!empty($_SESSION['cart'])){ ?>
 <?php foreach($_SESSION['cart'] as $product): ?>
@@ -14,6 +14,8 @@
 </div>
 <?php endforeach ?>
 <?php };?>
+<?php if (!empty($_SESSION['cart'])):?>
+
                 <div class="form__name section">
                     <div class="form__name--first wrapper">
                         <label class="form__name--title description " for="voornaam">Voornaam</label>
@@ -58,7 +60,7 @@
                     <input type="number" pattern="[0-9]{4}" name="postcode" class="form__steet--postcode input" required value="<?php if(!empty($_POST['postcode'])){
                             echo $_POST['gemeente'];
                         }?>">
-                </div>
+                          </div>
                 <div class= check>
                 <input type="checkbox" value="">
                 <p>ik wil dat het pakje geleverd word op een andere plaats</p>
@@ -73,7 +75,6 @@
                 <label class=" description" for="postcode(2)">Postcode</label>
                 <input type="number" pattern="[0-9]{4}" name="postcode(2)" class="form__steet--postcode input"></div>
                 </div>
-
                 <div class="form__betaling section">
                     <div class="wrapper">
                         <label class="form__betaling--label description" for="betaling ">Betalingswijze</label>
@@ -96,8 +97,11 @@
                             </label>
                         </div>
                     </div>
-
-                <input class="form__submit section" type="submit" value="verzend" name="checkout" >
+                <input class="form__submit section" type="submit" value="verzend" >
+                <?php else: ?>
+              <p class="note">bedankt voor uw bestelling, uw gegevens worden verwerkt. </p>
+              <a  class="form-terug" href="index.php?page=shop"> <img src="../assets/pijltje.svg" alt="pijltje" width="20"> Terug naar shop</a>
+              <?php endif ?>
 </form>
 
 </section>

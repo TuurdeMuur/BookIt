@@ -27,6 +27,18 @@ a {
   text-decoration: none;
 }
 
+.form-terug {
+  color: var(--humoRedColor);
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+  font-size: 2rem;
+}
+
+.note {
+  font-size: 2.5rem;
+}
+
 .article__img {
   display: flex;
   justify-content: center;
@@ -671,6 +683,18 @@ a {
 
 @media only screen and (max-width: 1250px) {
 
+  .form-terug {
+    color: var(--humoRedColor);
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+  }
+
+  .note {
+    font-size: 2rem;
+  }
+
   .article__wrapper {
 
     & .article__text {
@@ -924,6 +948,18 @@ a {
 }
 
 @media only screen and (max-width: 660px) {
+
+  .form-terug {
+    color: var(--humoRedColor);
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+    font-size: 2rem;
+  }
+
+  .note {
+    font-size: 2.5rem;
+  }
 
   .toggle-label {
     background-image: url(../src/assets/SVG/driehoek.svg);

@@ -1,4 +1,5 @@
 require('./style.css');
+require('./scripts/longread.js');
 {
 
   const init = () => {
@@ -7,13 +8,6 @@ require('./style.css');
     toggleGadgets();
   };
 
-  // const checkWidth = () => {
-  // window.addEventListener('resize', function() {
-  // const $screenWidth = screen.width;
-  // const $books = document.querySelector('.toggle');
-  //if (this < 660) {
-  //   $books.style.display = 'none'; //  } // });
-  //};
 
   const toggleBooks = () => {
     const $dropOne = document.getElementById('dropOne');

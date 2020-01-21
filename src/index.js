@@ -1,5 +1,6 @@
 require('./style.css');
 require('./scripts/longread.js');
+require('./scripts/validate.js');
 {
 
   const init = () => {

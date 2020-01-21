@@ -683,7 +683,7 @@ a {
 }
 
 .check {
-  display: flex;
+  display: none;
   align-items: center;
 }
 

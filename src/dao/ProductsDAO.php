@@ -64,5 +64,13 @@ class ProductsDAO extends DAO {
     }
     return $errors;
   }
+  public function insertProducts($data){
+    $sql = "INSERT INTO `ordered products` (`order_id`,`name`,`quantity`) VALUES(:order_id,:naam,:quantity)";
+      $stmt = $this->pdo->prepare($sql);
+      $stmt->bindValue(':order_id',$data['order_id']);
+      $stmt->bindValue(':naam',$data['lastname']);
+      $stmt->bindValue(':quantity',$data['quantity']);
+      $stmt->execute();
+  }
 
 }

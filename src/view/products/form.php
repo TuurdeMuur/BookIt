@@ -5,6 +5,7 @@
 <form action="index.php?page=form" method = "POST" class="form-check" >
 <input type="hidden" name="action" value="insertOrder">
 <?php if (!empty($_SESSION['cart'])){ ?>
+<p class="order__hoeveelheid">uw bestelling:</p>
 <?php foreach($_SESSION['cart'] as $product): ?>
 <input type="hidden" name="product" value="<?php echo $product['product']['id'] ?>">
 <p class="order__name"></p>

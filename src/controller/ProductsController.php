@@ -62,9 +62,6 @@ class ProductsController extends Controller {
 
   }
   public function form() {
-    if(!empty($_POST['action'])) {
-      session_unset();
-    }
 
     if(!empty($_POST['action'])){
       if($_POST['action'] == 'insertOrder'){
@@ -79,6 +76,9 @@ class ProductsController extends Controller {
           }
         }
       }
+    }
+    if(!empty($_POST['action'])) {
+      session_unset();
     }
   }
 

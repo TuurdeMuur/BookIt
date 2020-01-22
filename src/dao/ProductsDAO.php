@@ -69,7 +69,7 @@ class ProductsDAO extends DAO {
     $sql = "INSERT INTO `ordered products` (`order_id`,`name`,`quantity`) VALUES(:order_id,:naam,:quantity)";
       $stmt = $this->pdo->prepare($sql);
       $stmt->bindValue(':order_id',$data['order_id']);
-      $stmt->bindValue(':naam',$data['name']);
+      $stmt->bindValue(':naam',$data['product']['name']);
       $stmt->bindValue(':quantity',$data['quantity']);
       $stmt->execute();
   }

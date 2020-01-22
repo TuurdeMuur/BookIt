@@ -75,7 +75,7 @@ class ProductsController extends Controller {
         }else{
           foreach ($_SESSION['cart'] as $data){
             $insertedId = $data['order_id'];
-            $this->shopDAO->insertOrderdProduct($data);
+            $this->productsDAO->insertProducts($data);
           }
         }
       }

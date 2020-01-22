@@ -61,7 +61,7 @@
                             echo $_POST['gemeente'];
                         }?>">
                           </div>
-                <div class = "check">
+                <div class="check">
                 <input class="dropFour" type="checkbox" value="levering" id="ander" >
                 <p>ik wil dat het pakje geleverd word op een andere plaats</p>
                 </div>

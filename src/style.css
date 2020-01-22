@@ -990,6 +990,27 @@ a {
 
 @media only screen and (max-width: 660px) {
 
+  .header {
+
+    & .header__above {
+
+      & .header__above--section {
+        display: flex;
+
+        & .item__bold {
+
+          & .item__bold--link {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+
+  .mandje__img {
+    width: 5vw;
+  }
+
   .eur {
     display: none;
   }

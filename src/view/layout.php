@@ -19,9 +19,9 @@
   </ul>
   <ul class="header__above--section items">
   <li class="item item__bold"><a class="item__bold--link" href="index.php?page=shop">shop</a></li>
-  <li class="item item__bold">nu in humo</li>
-  <li class="item item__bold">login</li>
-  <li class="item item__bold">registreer</li>
+  <li class="item item__bold none">nu in humo</li>
+  <li class="item item__bold none">login</li>
+  <li class="item item__bold none">registreer</li>
   </ul>
   </div>
   <ul class="header__under">

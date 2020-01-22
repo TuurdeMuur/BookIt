@@ -69,12 +69,12 @@ class ProductsController extends Controller {
     if(!empty($_POST['action'])){
       if($_POST['action'] == 'insertOrder'){
         $insertedOrder = $this->productsDAO->insertOrder($_POST);
-        if(!$insertedOrder){
+        if(empty($insertedOrder)){
           $errors = $this->productsDAO->validate($_POST);
           $this->set('errors',$errors);
         }else{
           foreach ($_SESSION['cart'] as $data){
-            $insertedId = $data['order_id'];
+            $data['order_id'] = $insertedOrder['id'];
             $this->productsDAO->insertProducts($data);
           }
         }

@@ -35,10 +35,11 @@ class ProductsDAO extends DAO {
       $stmt->bindValue(':postcodes',$data['postcode(2)']);
       if($stmt->execute()) {
         $insertedId = $this->pdo->lastInsertId();
+        return $this->selectById($insertedId);
       }
+    }
   }
 
-  }
   public function validate($data){
     $errors = [];
     if (empty($data['firstname'])) {
@@ -68,7 +69,7 @@ class ProductsDAO extends DAO {
     $sql = "INSERT INTO `ordered products` (`order_id`,`name`,`quantity`) VALUES(:order_id,:naam,:quantity)";
       $stmt = $this->pdo->prepare($sql);
       $stmt->bindValue(':order_id',$data['order_id']);
-      $stmt->bindValue(':naam',$data['lastname']);
+      $stmt->bindValue(':naam',$data['name']);
       $stmt->bindValue(':quantity',$data['quantity']);
       $stmt->execute();
   }

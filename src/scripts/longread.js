@@ -11,7 +11,6 @@
     if ($pac) {
       $pac.addEventListener('click', function() {
         $pac.src = '../assets/gifs/pacman_1.gif';
-        $pac.width = '200';
       });
     }
   };

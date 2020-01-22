@@ -21,7 +21,7 @@
     <img class="level__left left-2" src="../assets/SVG/left_2.svg" alt="trap" >
   </article>
   <article class="level level__2">
-    <img class="pacman" src="../assets/SVG/pacman.svg" alt="packman" width="200">
+    <img class="pacman" src="../assets/SVG/pacman.svg" alt="packman" width="1000">
     <div class="level__2-container">
     <div class ="pacman-wrapper">
     <img src="../assets/SVG/bolletjes.svg" alt="bolletjes" class="bolletjes">
@@ -83,3 +83,4 @@
     </div>
   </article>
 </section>
+©

@@ -40,12 +40,10 @@
   </header>
   <body class="body">
     <main>
-<<<<<<< HEAD
       <div>
         <a href="index.php?page=abonnement"> <img src="../assets/pijltje.svg" alt="pijltje"> ABONNEER JE OP HUMO</a>
         <p>Humo eert het science-fiction en zet tien weken lang de beste boeken van het genre in de kijker. Deze week staat het boek Ready Player One in de kijker. Ben je in de markt om 1 van de boeken of zelf de hele reeks te kopen aarzel dan niet en bestel ze in onze webshop. </p>
       </div>
-=======
       <?php if ($currentpage != $badpage):?>
     <div class="call-wrapper">
       <div class="call">
@@ -59,7 +57,6 @@
     <a class="terug__link" href="index.php">Terug naar humo site</a>
     </div>
       <?php endif;?>
->>>>>>> develop
       <?php echo $content;?>
     </main>
     <?php if ($currentpage != $badpage): ?>

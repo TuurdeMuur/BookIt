@@ -38,7 +38,7 @@
     <h3 class="product__title">E-book versie</h3>
     <div class="product__link"><img class="product__link--img" src="../assets/pijltje.svg" alt="pijltje"><a class="product__link--a" href="index.php?page=book">Bekijk</a></div>
    </article>
-   <article class="section__reeks--item reeks product ">
+   <article class="section__reeks--item reeks product black-product">
    <picture class="product__img">
    <source
    media="(max-width: 660px)"
@@ -100,7 +100,6 @@
    </div>
 </section>
 <section class="section section__humo">
-
   <div class="title__wrapper">
   <h2 class="section__title" >HUMO Gerelateerd</h2>
   <input id="dropTwo" class="dropdown dropdown__2" type="checkbox">
@@ -112,7 +111,7 @@
   <picture class="product__img">
   <source
    media="(max-width: 464px)"
-   srcset ="../assets/abonnementSmall.png"
+   srcset ="../assets/abonnementTiny.png"
    >
    <source
    media="(max-width: 660px)"
@@ -226,6 +225,10 @@
    </article>
    <article class="section__gadget--item product loep">
   <picture class="product__img">
+  <source
+   media="(max-width: 400px)"
+   srcset ="../assets/professioneelTiny.png"
+   >
    <source
    media="(max-width: 660px)"
    srcset ="../assets/professioneel.png"

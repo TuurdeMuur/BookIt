@@ -3,7 +3,6 @@
 @import './css/long.css';
 @import './css/longres.css';
 
-
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -23,6 +22,15 @@ body {
   width: 100vw;
 }
 
+.style-wrapper {
+  display: flex;
+  margin-right: 1rem;
+}
+
+.eur {
+  margin-left: .7rem;
+}
+
 a {
   text-decoration: none;
 }
@@ -38,6 +46,11 @@ a {
 .note {
   font-size: 2.5rem;
   width: 74vw;
+}
+
+.error {
+  color: var(--humoRedColor);
+  margin-bottom: 1rem;
 }
 
 .article__img {
@@ -100,7 +113,7 @@ a {
       align-items: center;
 
       & h1 {
-        background-image: url('./assets/SVG/humo.svg');
+        background-image: url(./assets/SVG/humo.svg);
         background-repeat: no-repeat;
         display: flex;
         align-items: center;
@@ -161,10 +174,11 @@ a {
   width: 74vw;
   margin-top: var(--marginBig);
   margin-bottom: var(--marginBig);
-  background-image: url('./assets/SVG/dottet.svg');
+  background-image: url(./assets/SVG/dottet.svg);
   background-position: top;
   background-repeat: no-repeat;
   display: flex;
+  text-align: center;
   flex-direction: column;
   align-items: center;
   padding-top: 2rem;
@@ -183,7 +197,7 @@ a {
 }
 
 .title__wrapper {
-  background-image: url('./assets/SVG/dottet.svg');
+  background-image: url(./assets/SVG/dottet.svg);
   background-repeat: no-repeat;
   background-position: center;
   margin-top: 8rem;
@@ -219,6 +233,10 @@ a {
     flex-direction: column;
     justify-content: space-between;
     padding-bottom: 1rem;
+  }
+
+  & .black-product {
+    padding-bottom: .1rem;
   }
 
   & .boek {
@@ -297,14 +315,11 @@ a {
   height: 35rem;
 }
 
-.title-wrapper {
-  display: flex;
-}
-
 .gadget-wrapper {
   display: flex;
   justify-content: space-between;
 }
+
 
 .black {
   background-color: black;
@@ -313,6 +328,8 @@ a {
   justify-content: space-between;
   padding-top: 1rem;
   padding-bottom: .5rem;
+  height: 100%;
+  align-self: bottom;
 }
 
 .quote-black {
@@ -359,7 +376,7 @@ a {
   & .books__book {
     display: flex;
     justify-content: space-between;
-    background-image: url('./assets/SVG/dottet.svg');
+    background-image: url(./assets/SVG/dottet.svg);
     background-repeat: no-repeat;
     background-position: bottom;
     padding-bottom: var(--paddingMedium);
@@ -494,9 +511,9 @@ a {
 .cart__product {
   width: 74vw;
   display: grid;
-  grid-template-columns: 8fr 4fr .5fr;
+  grid-template-columns: 8fr 6fr .5fr;
   grid-gap: 2rem;
-  background-image: url('./assets/SVG/dottet.svg');
+  background-image: url(./assets/SVG/dottet.svg);
   background-repeat: no-repeat;
   background-position: bottom;
   font-size: var(--fontSizeSmall);
@@ -507,17 +524,22 @@ a {
   & .cart__product--specifics {
     display: flex;
     justify-content: space-between;
+    font-size: 1.3rem;
     align-items: center;
     color: var(--humoRedColor);
     font-weight: 300;
 
     & .hoeveelheid {
+      border: solid var(--humoRedColor) .1rem;
+      padding-left: 1.5rem;
       width: 4rem;
       color: var(--humoRedColor);
       font-weight: 300;
       font-size: var(--fontSizeSmall);
       display: flex;
       justify-content: center;
+      margin-right: 2rem;
+      margin-left: 2rem;
     }
   }
 
@@ -683,7 +705,9 @@ a {
 }
 
 .check {
-  display: none;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
   align-items: center;
 }
 
@@ -770,7 +794,7 @@ a {
 
     & .books__book {
 
-      & .books__book--wrapper {
+      & .books__book--wrapper {
         justify-content: center;
 
         & .books__book--autor {
@@ -905,7 +929,7 @@ a {
     display: grid;
     grid-template-columns: 8fr 4fr .5fr;
     grid-gap: 2rem;
-    background-image: url('./assets/SVG/dottet.svg');
+    background-image: url(./assets/SVG/dottet.svg);
     background-repeat: no-repeat;
     background-position: bottom;
     font-size: 1.5rem;
@@ -927,6 +951,8 @@ a {
         font-size: 1.5rem;
         display: flex;
         justify-content: center;
+        margin-right: 2rem;
+        margin-left: 2rem;
       }
     }
 
@@ -964,6 +990,31 @@ a {
 
 @media only screen and (max-width: 660px) {
 
+  .eur {
+    display: none;
+  }
+
+  .product__abo {
+    background-image: url(../src/assets/SVG/dottet.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    align-items: baseline;
+  }
+
+  .cart__totaal {
+    align-items: right;
+  }
+
+  .cart__totaal--totaal {
+    font-size: 1.5rem;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .form-terug {
     color: var(--humoRedColor);
     display: flex;
@@ -984,18 +1035,6 @@ a {
     background-position: center;
   }
 
-  .toggle {
-    display: none;
-  }
-
-  .toggleTwo {
-    display: none;
-  }
-
-  .toggleThree {
-    display: none;
-  }
-
   .article {
     width: 100vw;
     display: flex;
@@ -1010,11 +1049,6 @@ a {
 
   .order__name {
     width: 30rem;
-  }
-
-  .title__wrapper {
-    margin-top: 2rem;
-    margin-bottom: 3rem;
   }
 
   .description {
@@ -1064,14 +1098,14 @@ a {
   .mandje__links {
     margin-left: 10vw;
     margin-right: 10vw;
+
+    & .mandje-terug {
+      font-size: 1.5rem;
+    }
   }
 
   .cart-prijs__1 {
     display: none;
-  }
-
-  .cart__totaal {
-    margin-right: 9vw;
   }
 
   .cart__product--title {
@@ -1081,7 +1115,32 @@ a {
   }
 
   .cart__product {
-    margin-left: 7rem;
+    margin-left: none;
+    grid-template-columns: 60vw 12vw;
+    grid-gap: 2vw;
+    grid-row: 1fr 1fr;
+
+    & .cart__product--specifics {
+      font-size: 1.5rem;
+      grid-row: 2;
+      justify-content: flex-start;
+
+      & .hoeveelheid {
+        font-size: 2rem;
+        padding-left: .5rem;
+        margin-right: 2rem;
+        margin-left: 2rem;
+      }
+
+    }
+
+    & .cart__product--remove {
+      font-size: 1.3rem;
+      grid-row: 2;
+      grid-column: 2;
+      justify-self: right;
+    }
+
   }
 
   .papier {
@@ -1129,6 +1188,13 @@ a {
 
   .section__humo--item {
     height: 26rem;
+
+    & .toggleTwo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 74vw;
+    }
   }
 
   .recht {
@@ -1177,6 +1243,8 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     margin-left: 0;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
     padding-right: 3rem;
     width: 100vw;
 

@@ -14,14 +14,16 @@
                     <p class="cart__product--title"><?php echo $item['product']['name'];?></p>
                     <button type="submit" class="cart__product--remove" name="remove" value="<?php echo $item['product']['id'];?>">x</button>
                     <div class="cart__product--specifics">
-                        <p class="cart__product--specific cart-prijs cart-prijs__1"  ><span class="item_price">€ <?php echo $item['product']['price']?></span></p>
+                      <div class="style-wrapper">
+                      <p class="cart__product--specific cart-prijs cart-prijs__1"  ><?php echo $item['product']['price']?></p><p class="eur">EUR</p>
+                      </div>
                         <p>x</p><input type="text" name="quantity[<?php echo $item['product']['id'];?>]" value="<?php echo $item['quantity'];?>" class="cart__product--specific hoeveelheid">
-                        <p class="cart__product--specific cart-prijs cart-prijs__totaal">€ <?php echo $itemTotal?> </p>
+                        <p class="cart__product--specific cart-prijs cart-prijs__totaal"><?php echo $itemTotal?> EUR </p>
                      </div>
                 </div>
                 <?php endforeach;  ?>
                     <div class="cart__totaal">
-                    <p class="cart__totaal--totaal">totale prijs: € <?php echo  $total?></p>
+                    <p class="cart__totaal--totaal">totale prijs: <?php echo  $total?> EUR</p>
                     <button type="submit" id="update-cart" class="cart__totaal--update" name="action" value="update">update winkelwagentje</button>
                     </div>
                     </form>

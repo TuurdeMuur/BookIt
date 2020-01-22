@@ -82,11 +82,6 @@ class ProductsController extends Controller {
     }
   }
 
-  private function _handleCheckout() {
-    header('Location: https://stripe.com/checkout');
-    exit();
-  }
-
   private function _handleAdd() {
     if (empty($_SESSION['cart'][$_POST['product_id']])) {
       $product = $this->productsDAO->selectById($_POST['product_id']);

@@ -990,6 +990,10 @@ a {
 
 @media only screen and (max-width: 660px) {
 
+  .boek__img {
+    padding-left: 18vw;
+    padding-right: 20vw;
+  }
   .header {
 
     & .header__above {

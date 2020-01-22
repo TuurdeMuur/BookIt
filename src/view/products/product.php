@@ -147,7 +147,7 @@
     <h2 class='section__title' >" . $product['name'] ."</h2>
     </div>";
     echo "<div class='article__wrapper'>";
-    echo "<img class='article__img' src='../assets/boek/" . $product['img'] . ".png' alt='product foto'>";
+    echo "<div class='article__img'><img class='boek__img' src='../assets/boek/" . $product['img'] . ".png' alt='product foto'></div>";
     echo "<div class='article__text'>";
     echo "<p class='article__text--autor'>" . $product['author'] . "</p>";
     echo " <p class='article__text--description'>" . $product['description'] . "</p>";
@@ -162,7 +162,6 @@
     echo "<a class='article__links--link' href='index.php?page=shop'><img src='../assets/pijltje.svg' width='20' alt='pijltje'>Terug naar shop</a>";
     echo "</div>";
     echo "</section>";
-
   }else{
   echo "<section class='article'>";
   echo "<div class='title__wrapper'>

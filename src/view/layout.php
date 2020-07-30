@@ -44,9 +44,6 @@
     <div class="call-wrapper">
       <div class="call">
         <a class="call__link" href="index.php?page=abonnement"> <img src="./assets/pijltje.svg" alt="pijltje" class="abo" width="20">ABONNEER<span class="abo">JE OP HUMO</span> </a>
-        <p class="call__text">Humo eert het science-fiction en zet tien weken lang de beste boeken van het genre in de kijker.
-        Deze week staat het boek Ready Player One in de kijker.
-        Ben je in de markt om 1 van de boeken of zelf de hele reeks te kopen aarzel dan niet en bestel ze in onze webshop. <br> <a class="span" href="index.php?page=long">Klik hier</a> om meer te weten te komen over het boek.</p>
       </div></div>
       <?php else: ?>
         <div class="terug">
